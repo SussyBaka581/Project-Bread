@@ -19,9 +19,4 @@ public class Player extends Actor
             setLocation(getX()+1, getY());
         }
     }
-    
-    public int playerX(){
-        int x = getX();
-        return x;
-    }
 }

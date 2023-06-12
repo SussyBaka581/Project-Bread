@@ -19,9 +19,6 @@ public class ControlWorld extends World
         super(600, 400, 1); 
         World world = new Frame1();
         player = new Player();
-        if(playerX = 600){
-            
-        }
         Greenfoot.setWorld(world);
         
         
