@@ -25,22 +25,15 @@ public class Player extends Actor
         if(Greenfoot.isKeyDown("D")){
             setLocation(getX()+moveX, getY());
         }
-        //temporary features
+        //sprinting
         if(Greenfoot.isKeyDown("shift")){
             moveX = 10;
             moveY = 10;
         }
-        if(Greenfoot.isKeyDown("C")){
-            moveX = 2;
-            moveY = 2;
-        }
         //resets movement
-        if(Greenfoot.isKeyDown("P")){
+        else{
             moveX = 5;
             moveY = 5;
         }
-        //Update movement
-        //setLocation(getX() + moveX, getY() + moveY); 
-        
     }
 }
