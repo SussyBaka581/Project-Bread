@@ -8,12 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Frame2 extends ControlWorld
 {
-
     /**
      * Constructor for objects of class World2.
      * 
      */
     public Frame2()
     {
+        super(600, 400, 1);
     }
 }
