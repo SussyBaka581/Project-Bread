@@ -56,9 +56,13 @@ public class Player extends Actor
             getWorld().removeObjects(getWorld().getObjects(null));
       }
       else if (isTouching(ActBtn.class) && (Greenfoot.isKeyDown("enter"))) {
+            getWorld().setBackground("SubMenuDrop.png");
+            CombatModule.inSubMenu = true;
             getWorld().removeObjects(getWorld().getObjects(null));
       }
       else if (isTouching(ItemBtn.class) && (Greenfoot.isKeyDown("enter"))) {
+            getWorld().setBackground("SubMenuDrop.png");
+            CombatModule.inSubMenu = true;
             getWorld().removeObjects(getWorld().getObjects(null));
       }
       else if (isTouching(MercyBtn.class) && (Greenfoot.isKeyDown("enter"))) {
