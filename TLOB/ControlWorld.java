@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ControlWorld extends World
 {   static Actor player;
-    public int worldNum;
+    public World world;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -16,29 +16,25 @@ public class ControlWorld extends World
     public ControlWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
-        player = new Player();
-        World world = new Frame1();
+        super(600, 400, 1);
+        world = new Frame1();
         Greenfoot.setWorld(world);
         world.addObject(player, 300, 200);
-        worldNum = 1;
     }
     
     public void act()
     {
-        if(player.getX() == getWidth()- 1 /*&& worldNum == 1*/)
+        if(player.getX() == getWidth()- 10)
         {
-            World world = new Frame2();
+            world = new Frame2();
             Greenfoot.setWorld(world);
-            world.addObject(player, 2, 200);
-            worldNum = 2;
+            world.addObject(player, 20, 200);
         }
-        if(player.getX() == 0) /*&& worldNum == 2*/
+        if(player.getX() == 10)
         {
-            World world = new Frame1();
+            world = new Frame1();
             Greenfoot.setWorld(world);
-            world.addObject(player, 598, 200);
-            worldNum = 1;
+            world.addObject(player, 580, 200);
         }
     }
     
