@@ -13,6 +13,7 @@ public class CombatModule extends World
     public ItemBtn I = new ItemBtn();
     public MercyBtn M = new MercyBtn();
     public Player P = new Player();
+    public static boolean isAttacking = false;
     //----------- finish the rest of the buttons for this pls
     /**
      * Constructor for objects of class MyWorld.
@@ -27,5 +28,11 @@ public class CombatModule extends World
         addObject(I, 581, 710);
         addObject(M, 770, 710);
         addObject(P, 148, 713);
+    }
+    public void act() {
+        if (isAttacking == true) {
+            addObject(P, 520, 550);
+            isAttacking = false;
+        }
     }
 }
