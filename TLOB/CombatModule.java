@@ -12,7 +12,7 @@ public class CombatModule extends World
     public ActBtn A = new ActBtn();
     public ItemBtn I = new ItemBtn();
     public MercyBtn M = new MercyBtn();
-    public Player P = new Player();
+    public CombatPlayer P = new CombatPlayer();
     public static boolean isAttacking = false;
     public static boolean inSubMenu = false;
     //----------- finish the rest of the buttons for this pls

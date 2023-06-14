@@ -14,7 +14,7 @@ public class ItemBtn extends Actor
      */
     public void act() 
     {
-        if (isTouching(Player.class)) {
+        if (isTouching(CombatPlayer.class)) {
             setImage("ItemBtnSelected.png");
         }
         else {

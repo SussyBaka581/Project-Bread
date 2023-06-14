@@ -14,7 +14,7 @@ public class MercyBtn extends Actor
      */
     public void act() 
     {
-        if (isTouching(Player.class)) {
+        if (isTouching(CombatPlayer.class)) {
             setImage("MercyBtnSelected.png");
         }
         else {

@@ -8,10 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TextBox extends Actor
 {
-    
-    public TextBox() {
+    public TextBox(String content) {
         GreenfootImage img = new GreenfootImage(120,550);
-        img.drawString ("swag", 2, 10);
+        img.setColor(new Color(255,255,255));
+        img.drawString (content, 40, 40);
         setImage (img);
     }
     /**
