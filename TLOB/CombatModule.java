@@ -13,8 +13,11 @@ public class CombatModule extends World
     public ItemBtn I = new ItemBtn();
     public MercyBtn M = new MercyBtn();
     public CombatPlayer P = new CombatPlayer();
+    public Attack bullet = new Attack("Beam", Color.WHITE, 0, 50, 50);
     public static boolean isAttacking = false;
-    public static boolean inSubMenu = false;
+    public static boolean inActMenu = false;
+    public static boolean inItemMenu = false;
+    public static boolean inMercyMenu = false;
     //----------- finish the rest of the buttons for this pls
     /**
      * Constructor for objects of class MyWorld.
@@ -29,15 +32,26 @@ public class CombatModule extends World
         addObject(I, 581, 710);
         addObject(M, 770, 710);
         addObject(P, 148, 713);
+        addObject(bullet, 500, 400);
     }
     public void act() {
+
         if (isAttacking == true) {
             addObject(P, 520, 550);
             isAttacking = false;
         }
-        if (inSubMenu == true) {
+        if (inActMenu == true) {
             addObject(P, 120, 550);
-            isAttacking = false;
+            inActMenu = false;
+        }
+        if (inItemMenu == true) {
+            inItemMenu = false;
+        }
+        if (inMercyMenu == true) {
+            Label label = new Label("You got away safely!");
+            addObject(P, 120, 550);
+            addObject(label, 320, 800);
+            inMercyMenu = false;
         }
     }
 }

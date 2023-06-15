@@ -6,10 +6,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class TextBox extends Actor
+public class Label extends Actor
 {
-    public TextBox(String content) {
-        GreenfootImage img = new GreenfootImage(120,550);
+    public Label(String content) {
+        GreenfootImage img = new GreenfootImage(content.length()*20,550);
+
+        Font font = new Font("Arial", 40);
+        img.setFont(font);
+        
         img.setColor(new Color(255,255,255));
         img.drawString (content, 40, 40);
         setImage (img);

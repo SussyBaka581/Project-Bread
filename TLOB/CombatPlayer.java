@@ -17,7 +17,8 @@ public class CombatPlayer extends Actor
     public void act() 
     { 
         if (inMenu == true) {
-         if (wait > 0) wait--;
+         if (wait > 0) 
+            wait--;
          else
          {
             if (isTouching(FightBtn.class) || (isTouching(ActBtn.class) || (isTouching(ItemBtn.class))))  {
@@ -57,15 +58,18 @@ public class CombatPlayer extends Actor
       }
       else if (isTouching(ActBtn.class) && (Greenfoot.isKeyDown("enter"))) {
             getWorld().setBackground("SubMenuDrop.png");
-            CombatModule.inSubMenu = true;
+            CombatModule.inActMenu = true;
             getWorld().removeObjects(getWorld().getObjects(null));
       }
       else if (isTouching(ItemBtn.class) && (Greenfoot.isKeyDown("enter"))) {
             getWorld().setBackground("SubMenuDrop.png");
-            CombatModule.inSubMenu = true;
+            CombatModule.inItemMenu = true;
             getWorld().removeObjects(getWorld().getObjects(null));
       }
       else if (isTouching(MercyBtn.class) && (Greenfoot.isKeyDown("enter"))) {
+            getWorld().setBackground("SubMenuDrop.png");
+            getWorld().removeObjects(getWorld().getObjects(null));
+            CombatModule.inMercyMenu = true;
             //have it end the combat phase and go back to main game
       }
     }
