@@ -25,13 +25,15 @@ public class ControlWorld extends World
     
     public void act()
     {
+        //forward
         if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15))
         {
             world = new Frame2();
             Greenfoot.setWorld(world);
             world.addObject(player, 20, player.getY());
         }
-        if(player.getX() == 10 || player.getX() == 15)
+        //backward
+        if((player.getX() == 10 || player.getX() == 15))
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
