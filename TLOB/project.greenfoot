@@ -1,12 +1,28 @@
 #Greenfoot project file
+<<<<<<< HEAD
+class.InvisibleWallDown.image=camel.png
+class.InvisibleWallLeft.image=alligator.png
+class.InvisibleWallRight.image=ant3.png
+class.InvisibleWallUp.image=bee.png
+=======
 class.Frame1.image=rivets.jpg
 class.Frame2.image=cactus.png
+>>>>>>> main
 class.MyWorld.image=brick.jpg
 class.Player.image=man.png
 dependency1.from=ControlWorld
 dependency1.to=Frame1
 dependency1.type=UsesDependency
 dependency2.from=ControlWorld
+<<<<<<< HEAD
+dependency2.to=Frame2
+dependency2.type=UsesDependency
+dependency3.from=MyWorld
+dependency3.to=Player
+dependency3.type=UsesDependency
+dependency4.from=Player
+dependency4.to=InvisibleWallLeft
+=======
 dependency2.to=Player
 dependency2.type=UsesDependency
 dependency3.from=ControlWorld
@@ -14,6 +30,7 @@ dependency3.to=Frame2
 dependency3.type=UsesDependency
 dependency4.from=MyWorld
 dependency4.to=Player
+>>>>>>> main
 dependency4.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
@@ -21,7 +38,11 @@ editor.fx.0.x=261
 editor.fx.0.y=67
 height=1000
 package.numDependencies=4
+<<<<<<< HEAD
+package.numTargets=9
+=======
 package.numTargets=6
+>>>>>>> main
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
@@ -37,47 +58,95 @@ readme.x=10
 readme.y=10
 simulation.speed=48
 target1.height=70
+<<<<<<< HEAD
+target1.name=InvisibleWallDown
+=======
 target1.name=Frame2
+>>>>>>> main
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=120
 target1.x=0
 target1.y=0
 target2.height=70
+<<<<<<< HEAD
+target2.name=Frame2
+=======
 target2.name=Player
+>>>>>>> main
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=120
 target2.x=0
 target2.y=0
 target3.height=70
+<<<<<<< HEAD
+target3.name=Player
+=======
 target3.name=Frame1
+>>>>>>> main
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=120
 target3.x=0
 target3.y=0
 target4.height=70
+<<<<<<< HEAD
+target4.name=Frame1
+=======
 target4.name=Enemy
+>>>>>>> main
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=120
 target4.x=0
 target4.y=0
 target5.height=70
+<<<<<<< HEAD
+target5.name=InvisibleWallLeft
+=======
 target5.name=ControlWorld
+>>>>>>> main
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=120
 target5.x=0
 target5.y=0
 target6.height=70
+<<<<<<< HEAD
+target6.name=InvisibleWallUp
+=======
 target6.name=MyWorld
+>>>>>>> main
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=120
 target6.x=0
 target6.y=0
+<<<<<<< HEAD
+target7.height=70
+target7.name=InvisibleWallRight
+target7.showInterface=false
+target7.type=ClassTarget
+target7.width=120
+target7.x=0
+target7.y=0
+target8.height=70
+target8.name=ControlWorld
+target8.showInterface=false
+target8.type=ClassTarget
+target8.width=120
+target8.x=0
+target8.y=0
+target9.height=70
+target9.name=MyWorld
+target9.showInterface=false
+target9.type=ClassTarget
+target9.width=120
+target9.x=0
+target9.y=0
+=======
+>>>>>>> main
 version=3.0.0
 width=1296
 world.lastInstantiated=ControlWorld
