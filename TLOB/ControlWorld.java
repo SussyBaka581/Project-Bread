@@ -18,23 +18,24 @@ public class ControlWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
         world = new Frame1();
+        player = new Player();
         Greenfoot.setWorld(world);
-        world.addObject(player, 300, 200);
+        world.addObject(player, 500, 400);
     }
     
     public void act()
     {
-        if(player.getX() == getWidth()- 10)
+        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15))
         {
             world = new Frame2();
             Greenfoot.setWorld(world);
-            world.addObject(player, 20, 200);
+            world.addObject(player, 20, player.getY());
         }
-        if(player.getX() == 10)
+        if(player.getX() == 10 || player.getX() == 15)
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
-            world.addObject(player, 580, 200);
+            world.addObject(player, getWidth()-20, player.getY());
         }
     }
     

@@ -14,6 +14,6 @@ public class Frame2 extends ControlWorld
      */
     public Frame2()
     {
-        super(600, 400, 1);
+        super(1000, 800, 1);
     }
 }
