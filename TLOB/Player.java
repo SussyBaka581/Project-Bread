@@ -13,16 +13,16 @@ public class Player extends Actor
     public void act()
     {
         //Basic movement
-        if(Greenfoot.isKeyDown("W")){
+        if(Greenfoot.isKeyDown("W") && !isTouching(InvisibleWallUp.class)){
             setLocation(getX(), getY()-moveY);
         }
-        if(Greenfoot.isKeyDown("S")){
+        if(Greenfoot.isKeyDown("S") && !isTouching(InvisibleWallDown.class)){
             setLocation(getX(), getY()+moveY);
         }
-        if(Greenfoot.isKeyDown("A")){
+        if(Greenfoot.isKeyDown("A") && !isTouching(InvisibleWallLeft.class)){
             setLocation(getX()-moveX, getY());
         }
-        if(Greenfoot.isKeyDown("D")){
+        if(Greenfoot.isKeyDown("D") && !isTouching(InvisibleWallRight.class)){
             setLocation(getX()+moveX, getY());
         }
         //sprinting
@@ -35,5 +35,10 @@ public class Player extends Actor
             moveX = 5;
             moveY = 5;
         }
+        
+        //Invisible wall detection
+        //if(isTouching(InvisibleWallLeft.class)){
+        //    moveX = 0;
+        //}
     }
 }
