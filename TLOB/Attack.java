@@ -16,6 +16,8 @@ public class Attack extends Actor
     private double x = 0;
     private double y = 0;
     private int rot = 0;
+    private CombatPlayer playa;
+    private int counter;
 
     public Attack(String type, Color color, int delay, int length, int width, CombatPlayer plr) {
         t = type;
@@ -23,9 +25,10 @@ public class Attack extends Actor
         d = delay;
         w = width;
         l = length;
-        x = plr.getX() + (Math.cos(rot * (Math.PI / 180)) * length / 2);
-        y = plr.getY() + (Math.sin(rot * (Math.PI / 180)) * length / 2);
+        playa = plr;
         rot = Greenfoot.getRandomNumber(360);
+        x = plr.getX() - (Math.cos(rot * (Math.PI / 180)) * length / 2);
+        y = plr.getY() - (Math.sin(rot * (Math.PI / 180)) * length / 2);
     }
     /**
      * Act - do whatever the Attack wants to do. This method is called whenever
@@ -34,14 +37,14 @@ public class Attack extends Actor
     public void act()
     {
         update();
-        x += Math.cos((rot+90) * (Math.PI / 180))*2;
-        y += Math.sin((rot+90) * (Math.PI / 180))*2; //move wasnt working so whatever
+        x += Math.cos((rot) * (Math.PI / 180))*2;
+        y += Math.sin((rot) * (Math.PI / 180))*2; //move wasnt working so whatever
         setLocation((int) x,(int) y);
         setRotation(rot);
-        
+    
     }
     public void update(){
-        setImage(new GreenfootImage(w+1,l+1));
+        setImage(new GreenfootImage(w+1,w+1));
         GreenfootImage img = getImage();
         img.setColor(c);
         

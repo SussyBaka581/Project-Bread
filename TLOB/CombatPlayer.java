@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.Collection;
 
 /**
  * Write a description of class Sussy_baka here.
@@ -57,24 +58,30 @@ public class CombatPlayer extends Actor
             getWorld().setBackground("FightDrop.png");
             inMenu = false;
             CombatModule.isAttacking = true;
-            getWorld().removeObjects(getWorld().getObjects(null));
+            setLocation(500, 550);
+            clearScreen();
       }
       else if (isTouching(ActBtn.class) && (Greenfoot.isKeyDown("enter"))) {
             getWorld().setBackground("SubMenuDrop.png");
             CombatModule.inActMenu = true;
-            getWorld().removeObjects(getWorld().getObjects(null));
+            clearScreen();
       }
       else if (isTouching(ItemBtn.class) && (Greenfoot.isKeyDown("enter"))) {
             getWorld().setBackground("SubMenuDrop.png");
             CombatModule.inItemMenu = true;
-            getWorld().removeObjects(getWorld().getObjects(null));
+            clearScreen();
       }
       else if (isTouching(MercyBtn.class) && (Greenfoot.isKeyDown("enter"))) {
             getWorld().setBackground("SubMenuDrop.png");
-            getWorld().removeObjects(getWorld().getObjects(null));
+            clearScreen();
             CombatModule.inMercyMenu = true;
             //have it end the combat phase and go back to main game
       }
+    }
+    public void clearScreen() {
+        Collection objects = getWorld().getObjects(null);
+        objects.remove(this);
+        getWorld().removeObjects(objects);
     }
 }
 

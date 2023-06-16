@@ -17,6 +17,7 @@ public class CombatModule extends World
     public static boolean inActMenu = false;
     public static boolean inItemMenu = false;
     public static boolean inMercyMenu = false;
+    public static Boss currentBoss;
     //----------- finish the rest of the buttons for this pls
     /**
      * Constructor for objects of class MyWorld.
@@ -31,13 +32,15 @@ public class CombatModule extends World
         addObject(I, 581, 710);
         addObject(M, 770, 710);
         addObject(P, 148, 713);
+        currentBoss = new Baller(10,1,"Baller","He throw", P);
     }
     public void act() {
         if (isAttacking == true) {
-            addObject(P, 520, 550);
-            Attack bullet = new Attack("Bullet", Color.WHITE, 0, 500, 15, P);
-        addObject(bullet, 500, 400);
-            isAttacking = false;
+            currentBoss.Update();
+            if (currentBoss.shouldAttack == true) {
+                Attack a = currentBoss.Attack();
+                addObject(a, 1, 1);
+            }
         }
         if (inActMenu == true) {
             addObject(P, 120, 550);

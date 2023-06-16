@@ -6,29 +6,33 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Boss extends Actor
+public abstract class Boss extends Actor
 {
     public int health;
     public int attack;
     public String name;
     public String desc;
+    public CombatPlayer playa;
+    public boolean shouldAttack;
     
-    public Boss(int h, int a, String n, String d) {
+    public Boss(int h, int a, String n, String d, CombatPlayer plr) {
         health = h;
         attack = a;
         name = n;
         desc = d;
+        playa = plr;
+        shouldAttack = false;
     }
+    
     public void TakeDamage(){
         health -= 1;
     }
-    //public abstract void Attack();
+    
+    protected abstract Attack Attack();
+    
     /**
      * Act - do whatever the Boss wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act()
-    {
-        // Add your action code here.
-    }
+    protected abstract void Update();
 }
