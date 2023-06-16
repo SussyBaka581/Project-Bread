@@ -25,19 +25,51 @@ public class ControlWorld extends World
     
     public void act()
     {
-        //forward
+        //BOTTOM LEVEL LEFT/RIGHT
+        
+        //forward to 2
         if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15))
         {
             world = new Frame2();
             Greenfoot.setWorld(world);
             world.addObject(player, 20, player.getY());
         }
-        //backward
+        //backward to 1
         if((player.getX() == 10 || player.getX() == 15))
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
             world.addObject(player, getWidth()-20, player.getY());
+        }
+        //forward to 3
+        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15)){
+            world = new Frame3();
+            Greenfoot.setWorld(world);
+            world.addObject(player, 20, player.getY());
+        }
+        //backward to 2
+        if((player.getX() == 10 || player.getX() == 15))
+        {
+            world = new Frame2();
+            Greenfoot.setWorld(world);
+            world.addObject(player, getWidth()-20, player.getY());
+        }
+        
+        //BOTTOM LEVEL UP/DOWN
+        
+        //up to 4
+        if(player.getY() == 0)
+        {
+            world = new Frame4();
+            Greenfoot.setWorld(world);
+            world.addObject(player, player.getX(), getHeight()-20);
+        }
+        //back to 1
+        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15)
+        {
+            world = new Frame1();
+            Greenfoot.setWorld(world);
+            world.addObject(player, player.getX(), 20);
         }
     }
     
