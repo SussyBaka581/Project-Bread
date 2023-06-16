@@ -13,7 +13,6 @@ public class CombatModule extends World
     public ItemBtn I = new ItemBtn();
     public MercyBtn M = new MercyBtn();
     public CombatPlayer P = new CombatPlayer();
-    public Attack bullet = new Attack("Beam", Color.WHITE, 0, 50, 50);
     public static boolean isAttacking = false;
     public static boolean inActMenu = false;
     public static boolean inItemMenu = false;
@@ -32,12 +31,12 @@ public class CombatModule extends World
         addObject(I, 581, 710);
         addObject(M, 770, 710);
         addObject(P, 148, 713);
-        addObject(bullet, 500, 400);
     }
     public void act() {
-
         if (isAttacking == true) {
             addObject(P, 520, 550);
+            Attack bullet = new Attack("Bullet", Color.WHITE, 0, 500, 15, P);
+        addObject(bullet, 500, 400);
             isAttacking = false;
         }
         if (inActMenu == true) {

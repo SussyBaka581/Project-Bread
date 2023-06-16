@@ -10,6 +10,7 @@ public class CombatPlayer extends Actor
 {
     private int wait;
     public boolean inMenu = true;
+    public boolean inSubMenu = false;
     /**
      * Act - do whatever the Sussy_baka wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -47,6 +48,8 @@ public class CombatPlayer extends Actor
          if (Greenfoot.isKeyDown("s") && getY() <= 700) {
                 setLocation(getX(),getY()+5);
          }
+      } else if (inSubMenu == true) {
+          
       }
         //-----------------------------button movement scripts
         

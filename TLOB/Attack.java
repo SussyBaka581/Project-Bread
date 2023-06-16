@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Attack here.
@@ -8,28 +8,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Attack extends Actor
 {
-    public static String type = "bullet";
-    public static greenfoot.Color colorValue = Color.WHITE;
-    public static int delay = 0;
-    public static int width = 5;
-    public static int height = 800;
+    private String t = "bullet";
+    private greenfoot.Color c = Color.WHITE;
+    private int d = 0;
+    private int w = 5;
+    private int l = 800;
+    private double x = 0;
+    private double y = 0;
+    private int rot = 0;
 
-    public Attack(String t, Color c, int d, int w, int h ) {
-        if (t.equals("Bullet")) {
-          GreenfootImage img = new GreenfootImage(w,h);
-          img.setColor(c);
-          System.out.println(c);
-          img.fillRect (500, 400, w, h);
-          setImage (img);
-        }
-        else if (t.equals("Beam")) {
-          GreenfootImage img = new GreenfootImage(w,h);
-          img.setColor(c);
-          System.out.println(c);
-          img.fillRect (500, 400, w, h);
-          setImage (img);
-        }
-        // copy paste above and change the name and variables to add new attacks
+    public Attack(String type, Color color, int delay, int length, int width, CombatPlayer plr) {
+        t = type;
+        c = color;
+        d = delay;
+        w = width;
+        l = length;
+        x = plr.getX() + (Math.cos(rot * (Math.PI / 180)) * length / 2);
+        y = plr.getY() + (Math.sin(rot * (Math.PI / 180)) * length / 2);
+        rot = Greenfoot.getRandomNumber(360);
     }
     /**
      * Act - do whatever the Attack wants to do. This method is called whenever
@@ -37,6 +33,25 @@ public class Attack extends Actor
      */
     public void act()
     {
+        update();
+        x += Math.cos((rot+90) * (Math.PI / 180))*2;
+        y += Math.sin((rot+90) * (Math.PI / 180))*2; //move wasnt working so whatever
+        setLocation((int) x,(int) y);
+        setRotation(rot);
         
+    }
+    public void update(){
+        setImage(new GreenfootImage(w+1,l+1));
+        GreenfootImage img = getImage();
+        img.setColor(c);
+        
+        
+        
+        if (t == "Beam") {
+            
+        }
+        if (t == "Bullet") {
+            img.fillRect(0,0, w, w);
+        }
     }
 }
