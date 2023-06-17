@@ -1,22 +1,36 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
 /**
- * Write a description of class world1 here.
+ * Write a description of class BaseWallParams here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Frame1 extends ControlWorld
-{   
+public class BaseWallParams  
+{
+    // instance variables - replace the example below with your own
+    private int x;
+
     /**
-     * Constructor for objects of class world1.
-     * 
+     * Constructor for objects of class BaseWallParams
      */
-    public Frame1()
+    public BaseWallParams()
     {
-        super(1000, 800, 1);
-        addObject(new Afton(), 46, 725);
-        //left/right/up/down methods in ControlWorld
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public int sampleMethod(int y)
+    {
+        // put your code here
+        return x + y;
+    }
+    
+    //BELOW ARE THE PARAMETERS FOR THE WALL CODE (all 4 sides walled in
+    
+        /*
         left(20, 20);
         left(20, 105);
         left(20, 190);
@@ -66,7 +80,5 @@ public class Frame1 extends ControlWorld
         up(860, 20);
         up(945, 20);
         up(1030, 20);
-    }
-    
-    }
-
+        */
+}
