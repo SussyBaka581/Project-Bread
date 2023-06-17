@@ -11,10 +11,10 @@ class.Frame6.image=ant-with-food.png
 class.Frame7.image=castle.png
 class.Frame8.image=yellow-draught.png
 class.Frame9.image=snowman.png
-class.InvisibleWallDown.image=camel.png
-class.InvisibleWallLeft.image=alligator.png
-class.InvisibleWallRight.image=ant3.png
-class.InvisibleWallUp.image=bee.png
+class.InvisibleWallDown.image=pixil-frame-0.png
+class.InvisibleWallLeft.image=pixil-frame-0\ (1).png
+class.InvisibleWallRight.image=pixil-frame-0\ (1).png
+class.InvisibleWallUp.image=pixil-frame-0.png
 class.MyWorld.image=brick.jpg
 class.Player.image=man.png
 class.Screws.image=teddybear.png
@@ -30,6 +30,7 @@ dependency11.from=ControlWorld
 dependency11.to=Frame5
 dependency11.type=UsesDependency
 dependency12.from=ControlWorld
+<<<<<<< HEAD
 dependency12.to=Frame6
 dependency12.type=UsesDependency
 dependency13.from=ControlWorld
@@ -42,6 +43,20 @@ dependency15.from=ControlWorld
 dependency15.to=Frame9
 dependency15.type=UsesDependency
 dependency16.from=Frame6
+=======
+dependency12.to=InvisibleWallLeft
+dependency12.type=UsesDependency
+dependency13.from=ControlWorld
+dependency13.to=InvisibleWallRight
+dependency13.type=UsesDependency
+dependency14.from=ControlWorld
+dependency14.to=InvisibleWallDown
+dependency14.type=UsesDependency
+dependency15.from=ControlWorld
+dependency15.to=InvisibleWallUp
+dependency15.type=UsesDependency
+dependency16.from=Frame1
+>>>>>>> main
 dependency16.to=Afton
 dependency16.type=UsesDependency
 dependency17.from=Frame5
@@ -89,6 +104,7 @@ dependency8.type=UsesDependency
 dependency9.from=ControlWorld
 dependency9.to=Frame3
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=260
@@ -96,6 +112,15 @@ editor.fx.0.y=67
 height=830
 package.numDependencies=23
 package.numTargets=22
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=985
+package.numDependencies=23
+package.numTargets=19
+>>>>>>> main
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
@@ -153,35 +178,55 @@ target14.width=120
 target14.x=0
 target14.y=0
 target15.height=70
+<<<<<<< HEAD
 target15.name=ControlWorld
+=======
+target15.name=BaseWallParams
+>>>>>>> main
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=120
 target15.x=0
 target15.y=0
 target16.height=70
+<<<<<<< HEAD
 target16.name=Frame6
+=======
+target16.name=Frame5
+>>>>>>> main
 target16.showInterface=false
 target16.type=ClassTarget
 target16.width=120
 target16.x=0
 target16.y=0
 target17.height=70
+<<<<<<< HEAD
 target17.name=Frame5
+=======
+target17.name=InvisibleWallUp
+>>>>>>> main
 target17.showInterface=false
 target17.type=ClassTarget
 target17.width=120
 target17.x=0
 target17.y=0
 target18.height=70
+<<<<<<< HEAD
 target18.name=InvisibleWallUp
+=======
+target18.name=InvisibleWallRight
+>>>>>>> main
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=120
 target18.x=0
 target18.y=0
 target19.height=70
+<<<<<<< HEAD
 target19.name=Screws
+=======
+target19.name=MyWorld
+>>>>>>> main
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=120
@@ -265,7 +310,7 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
-width=1550
+width=1293
 world.lastInstantiated=ControlWorld
-xPosition=0
-yPosition=0
+xPosition=417
+yPosition=48
