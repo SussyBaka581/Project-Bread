@@ -15,10 +15,6 @@ public class Frame1 extends ControlWorld
     public Frame1()
     {
         super(1000, 800, 1);
-<<<<<<< HEAD
-        //addObject(new Afton(), 46, 725);
-=======
-        addObject(new Afton(), 46, 725);
         //left/right/up/down methods in ControlWorld
         left(20, 20);
         left(20, 105);
@@ -69,7 +65,6 @@ public class Frame1 extends ControlWorld
         up(860, 20);
         up(945, 20);
         up(1030, 20);
->>>>>>> main
     }
     
     }
