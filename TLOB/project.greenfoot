@@ -1,6 +1,7 @@
 #Greenfoot project file
 class.Afton.image=person.png
 class.Butterknife.image=butterknife.jpg
+class.Elytra.image=bomb.png
 class.Frame1.image=rivets.jpg
 class.Frame2.image=cactus.png
 class.Frame3.image=baby2.png
@@ -16,16 +17,33 @@ class.InvisibleWallRight.image=pixil-frame-0\ (1).png
 class.InvisibleWallUp.image=pixil-frame-0.png
 class.MyWorld.image=brick.jpg
 class.Player.image=man.png
+class.Screws.image=teddybear.png
+class.Tripmine.image=anchor.png
+class.VCover.image=phone.png
 dependency1.from=ControlWorld
 dependency1.to=Frame1
 dependency1.type=UsesDependency
 dependency10.from=ControlWorld
-dependency10.to=Frame8
+dependency10.to=Frame4
 dependency10.type=UsesDependency
 dependency11.from=ControlWorld
-dependency11.to=Frame9
+dependency11.to=Frame5
 dependency11.type=UsesDependency
 dependency12.from=ControlWorld
+<<<<<<< HEAD
+dependency12.to=Frame6
+dependency12.type=UsesDependency
+dependency13.from=ControlWorld
+dependency13.to=Frame7
+dependency13.type=UsesDependency
+dependency14.from=ControlWorld
+dependency14.to=Frame8
+dependency14.type=UsesDependency
+dependency15.from=ControlWorld
+dependency15.to=Frame9
+dependency15.type=UsesDependency
+dependency16.from=Frame6
+=======
 dependency12.to=InvisibleWallLeft
 dependency12.type=UsesDependency
 dependency13.from=ControlWorld
@@ -38,6 +56,7 @@ dependency15.from=ControlWorld
 dependency15.to=InvisibleWallUp
 dependency15.type=UsesDependency
 dependency16.from=Frame1
+>>>>>>> main
 dependency16.to=Afton
 dependency16.type=UsesDependency
 dependency17.from=Frame5
@@ -68,23 +87,32 @@ dependency3.from=ControlWorld
 dependency3.to=Butterknife
 dependency3.type=UsesDependency
 dependency4.from=ControlWorld
-dependency4.to=Frame2
+dependency4.to=Tripmine
 dependency4.type=UsesDependency
 dependency5.from=ControlWorld
-dependency5.to=Frame3
+dependency5.to=Elytra
 dependency5.type=UsesDependency
 dependency6.from=ControlWorld
-dependency6.to=Frame4
+dependency6.to=VCover
 dependency6.type=UsesDependency
 dependency7.from=ControlWorld
-dependency7.to=Frame5
+dependency7.to=Screws
 dependency7.type=UsesDependency
 dependency8.from=ControlWorld
-dependency8.to=Frame6
+dependency8.to=Frame2
 dependency8.type=UsesDependency
 dependency9.from=ControlWorld
-dependency9.to=Frame7
+dependency9.to=Frame3
 dependency9.type=UsesDependency
+<<<<<<< HEAD
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=260
+editor.fx.0.y=67
+height=830
+package.numDependencies=23
+package.numTargets=22
+=======
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -92,6 +120,7 @@ editor.fx.0.y=0
 height=985
 package.numDependencies=23
 package.numTargets=19
+>>>>>>> main
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
@@ -114,70 +143,90 @@ target1.width=120
 target1.x=0
 target1.y=0
 target10.height=70
-target10.name=Frame9
+target10.name=Afton
 target10.showInterface=false
 target10.type=ClassTarget
 target10.width=120
 target10.x=0
 target10.y=0
 target11.height=70
-target11.name=Frame8
+target11.name=Frame9
 target11.showInterface=false
 target11.type=ClassTarget
 target11.width=120
 target11.x=0
 target11.y=0
 target12.height=70
-target12.name=Frame7
+target12.name=Tripmine
 target12.showInterface=false
 target12.type=ClassTarget
 target12.width=120
 target12.x=0
 target12.y=0
 target13.height=70
-target13.name=ControlWorld
+target13.name=Frame8
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=120
 target13.x=0
 target13.y=0
 target14.height=70
-target14.name=Frame6
+target14.name=Frame7
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=120
 target14.x=0
 target14.y=0
 target15.height=70
+<<<<<<< HEAD
+target15.name=ControlWorld
+=======
 target15.name=BaseWallParams
+>>>>>>> main
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=120
 target15.x=0
 target15.y=0
 target16.height=70
+<<<<<<< HEAD
+target16.name=Frame6
+=======
 target16.name=Frame5
+>>>>>>> main
 target16.showInterface=false
 target16.type=ClassTarget
 target16.width=120
 target16.x=0
 target16.y=0
 target17.height=70
+<<<<<<< HEAD
+target17.name=Frame5
+=======
 target17.name=InvisibleWallUp
+>>>>>>> main
 target17.showInterface=false
 target17.type=ClassTarget
 target17.width=120
 target17.x=0
 target17.y=0
 target18.height=70
+<<<<<<< HEAD
+target18.name=InvisibleWallUp
+=======
 target18.name=InvisibleWallRight
+>>>>>>> main
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=120
 target18.x=0
 target18.y=0
 target19.height=70
+<<<<<<< HEAD
+target19.name=Screws
+=======
 target19.name=MyWorld
+>>>>>>> main
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=120
@@ -190,6 +239,27 @@ target2.type=ClassTarget
 target2.width=120
 target2.x=0
 target2.y=0
+target20.height=70
+target20.name=Elytra
+target20.showInterface=false
+target20.type=ClassTarget
+target20.width=120
+target20.x=0
+target20.y=0
+target21.height=70
+target21.name=InvisibleWallRight
+target21.showInterface=false
+target21.type=ClassTarget
+target21.width=120
+target21.x=0
+target21.y=0
+target22.height=70
+target22.name=MyWorld
+target22.showInterface=false
+target22.type=ClassTarget
+target22.width=120
+target22.x=0
+target22.y=0
 target3.height=70
 target3.name=Frame3
 target3.showInterface=false
@@ -233,7 +303,7 @@ target8.width=120
 target8.x=0
 target8.y=0
 target9.height=70
-target9.name=Afton
+target9.name=VCover
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=120
