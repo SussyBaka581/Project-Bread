@@ -9,6 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class ControlWorld extends World
 {   static Actor player;
     static Actor butterknife;
+    static Actor item1;
+    static Actor item2;
+    static Actor item3;
+    static Actor item4;
     public World world;
     /**
      * Constructor for objects of class MyWorld.
@@ -21,6 +25,10 @@ public class ControlWorld extends World
         world = new Frame1();
         player = new Player();
         butterknife = new Butterknife();
+        item1 = new Item1();
+        item2 = new Item2();
+        item3 = new Item3();
+        item4 = new Item4();
         Greenfoot.setWorld(world);
         world.addObject(player, 500, 400);
         world.addObject(butterknife, 792, 187);
