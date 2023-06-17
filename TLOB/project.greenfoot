@@ -10,10 +10,17 @@ class.Frame6.image=ant-with-food.png
 class.Frame7.image=castle.png
 class.Frame8.image=yellow-draught.png
 class.Frame9.image=snowman.png
+<<<<<<< HEAD
+class.InvisibleWallDown.image=pixil-frame-0.png
+class.InvisibleWallLeft.image=pixil-frame-0\ (1).png
+class.InvisibleWallRight.image=pixil-frame-0\ (1).png
+class.InvisibleWallUp.image=pixil-frame-0.png
+=======
 class.InvisibleWallDown.image=camel.png
 class.InvisibleWallLeft.image=alligator.png
 class.InvisibleWallRight.image=ant3.png
 class.InvisibleWallUp.image=bee.png
+>>>>>>> main
 class.MyWorld.image=brick.jpg
 class.Player.image=man.png
 dependency1.from=ControlWorld
@@ -23,6 +30,33 @@ dependency10.from=ControlWorld
 dependency10.to=Frame8
 dependency10.type=UsesDependency
 dependency11.from=ControlWorld
+<<<<<<< HEAD
+dependency11.to=InvisibleWallLeft
+dependency11.type=UsesDependency
+dependency12.from=ControlWorld
+dependency12.to=InvisibleWallRight
+dependency12.type=UsesDependency
+dependency13.from=ControlWorld
+dependency13.to=InvisibleWallDown
+dependency13.type=UsesDependency
+dependency14.from=ControlWorld
+dependency14.to=InvisibleWallUp
+dependency14.type=UsesDependency
+dependency15.from=Frame1
+dependency15.to=Afton
+dependency15.type=UsesDependency
+dependency16.from=MyWorld
+dependency16.to=Player
+dependency16.type=UsesDependency
+dependency17.from=Player
+dependency17.to=InvisibleWallUp
+dependency17.type=UsesDependency
+dependency18.from=Player
+dependency18.to=InvisibleWallDown
+dependency18.type=UsesDependency
+dependency19.from=Player
+dependency19.to=InvisibleWallLeft
+=======
 dependency11.to=Frame9
 dependency11.type=UsesDependency
 dependency12.from=Frame1
@@ -48,10 +82,17 @@ dependency18.to=InvisibleWallRight
 dependency18.type=UsesDependency
 dependency19.from=Afton
 dependency19.to=Player
+>>>>>>> main
 dependency19.type=UsesDependency
 dependency2.from=ControlWorld
 dependency2.to=Player
 dependency2.type=UsesDependency
+dependency20.from=Player
+dependency20.to=InvisibleWallRight
+dependency20.type=UsesDependency
+dependency21.from=Afton
+dependency21.to=Player
+dependency21.type=UsesDependency
 dependency3.from=ControlWorld
 dependency3.to=Butterknife
 dependency3.type=UsesDependency
@@ -71,6 +112,16 @@ dependency8.from=ControlWorld
 dependency8.to=Frame6
 dependency8.type=UsesDependency
 dependency9.from=ControlWorld
+<<<<<<< HEAD
+dependency9.to=Frame8
+dependency9.type=UsesDependency
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+height=1000
+package.numDependencies=21
+=======
 dependency9.to=Frame7
 dependency9.type=UsesDependency
 editor.fx.0.height=739
@@ -79,6 +130,7 @@ editor.fx.0.x=260
 editor.fx.0.y=67
 height=830
 package.numDependencies=19
+>>>>>>> main
 package.numTargets=18
 project.charset=windows-1252
 publish.hasSource=false
@@ -102,7 +154,11 @@ target1.width=120
 target1.x=0
 target1.y=0
 target10.height=70
+<<<<<<< HEAD
+target10.name=Frame8
+=======
 target10.name=Frame9
+>>>>>>> main
 target10.showInterface=false
 target10.type=ClassTarget
 target10.width=120
@@ -137,7 +193,11 @@ target14.width=120
 target14.x=0
 target14.y=0
 target15.height=70
+<<<<<<< HEAD
+target15.name=BaseWallParams
+=======
 target15.name=Frame5
+>>>>>>> main
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=120
@@ -200,7 +260,11 @@ target6.width=120
 target6.x=0
 target6.y=0
 target7.height=70
+<<<<<<< HEAD
+target7.name=InvisibleWallLeft
+=======
 target7.name=Frame1
+>>>>>>> main
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=120
@@ -214,7 +278,11 @@ target8.width=120
 target8.x=0
 target8.y=0
 target9.height=70
+<<<<<<< HEAD
+target9.name=Frame9
+=======
 target9.name=Afton
+>>>>>>> main
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=120
@@ -223,5 +291,5 @@ target9.y=0
 version=3.0.0
 width=1550
 world.lastInstantiated=ControlWorld
-xPosition=0
-yPosition=0
+xPosition=312
+yPosition=62

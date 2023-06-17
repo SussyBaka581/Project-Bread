@@ -214,4 +214,17 @@ public class ControlWorld extends World
     public ControlWorld (int width, int height, int cellsize){
         super(width, height, cellsize);
     }
+    
+    public void left(int x, int y){
+        addObject(new InvisibleWallLeft(), x, y);
+    }
+    public void right(int x, int y){
+        addObject(new InvisibleWallRight(), x, y);
+    }
+    public void down(int x, int y){
+        addObject(new InvisibleWallDown(), x, y);
+    }
+    public void up(int x, int y){
+        addObject(new InvisibleWallUp(), x, y);
+    }
 }
