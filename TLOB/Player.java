@@ -9,10 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Player extends Actor
 {
     boolean hasButterknife = false;
-    boolean hasItem1 = false;
-    boolean hasItem2 = false;
-    boolean hasItem3 = false;
-    boolean hasItem4 = false;
+    boolean hasMine = false;
+    boolean hasElytra = false;
+    boolean hasVCover = false;
+    boolean hasScrews = false;
     int moveX = 5;
     int moveY = 5;
     public void act()
@@ -41,21 +41,21 @@ public class Player extends Actor
             moveY = 5;
         }
         
-        if(isTouching(Item1.class) && hasItem1 == false){
-            removeTouching(Item1.class);
-            hasItem1 = true;
-        }
-        if(isTouching(Item2.class) && hasItem2 == false){
-            removeTouching(Item2.class);
-            hasItem2 = true;
-        }
-        if(isTouching(Item3.class) && hasItem3 == false){
-            removeTouching(Item3.class);
-            hasItem3 = true;
-        }
-        if(isTouching(Item4.class) && hasItem4 == false){
-            removeTouching(Item4.class);
-            hasItem4 = true;
-        }
+        //if(isTouching(Tripmine.class) && hasMine == false){
+        //    removeTouching(Tripmine.class);
+        //    hasMine = true;
+        //}
+        //if(isTouching(Elytra.class) && hasElytra == false){
+        //    removeTouching(Elytra.class);
+        //    hasElytra = true;
+        //}
+        //if(isTouching(VCover.class) && hasVCover == false){
+        //    removeTouching(VCover.class);
+        //    hasVCover = true;
+        //}
+        //if(isTouching(Screws.class) && hasScrews == false){
+        //    removeTouching(Screws.class);
+        //    hasScrews = true;
+        //}
     }
 }

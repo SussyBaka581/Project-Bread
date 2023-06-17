@@ -6,14 +6,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Item4 extends Player
+public class Screws extends Player
 {
+    GreenfootImage screws;
     /**
      * Act - do whatever the Item4 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        // Add your action code here.
+        if(isTouching(Player.class) && hasScrews == false){
+            screws = new GreenfootImage("jerma2.jpg");
+            setImage(screws);
+            hasScrews = true;
+        }
     }
 }
