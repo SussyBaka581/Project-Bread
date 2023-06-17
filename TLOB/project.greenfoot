@@ -1,5 +1,6 @@
 #Greenfoot project file
 class.Afton.image=person.png
+class.Butterknife.image=butterknife.jpg
 class.Frame1.image=rivets.jpg
 class.Frame2.image=cactus.png
 class.Frame3.image=baby2.png
@@ -9,19 +10,27 @@ class.Frame6.image=ant-with-food.png
 class.Frame7.image=castle.png
 class.Frame8.image=yellow-draught.png
 class.Frame9.image=snowman.png
+<<<<<<< HEAD
 class.InvisibleWallDown.image=pixil-frame-0.png
 class.InvisibleWallLeft.image=pixil-frame-0\ (1).png
 class.InvisibleWallRight.image=pixil-frame-0\ (1).png
 class.InvisibleWallUp.image=pixil-frame-0.png
+=======
+class.InvisibleWallDown.image=camel.png
+class.InvisibleWallLeft.image=alligator.png
+class.InvisibleWallRight.image=ant3.png
+class.InvisibleWallUp.image=bee.png
+>>>>>>> main
 class.MyWorld.image=brick.jpg
 class.Player.image=man.png
 dependency1.from=ControlWorld
 dependency1.to=Frame1
 dependency1.type=UsesDependency
 dependency10.from=ControlWorld
-dependency10.to=Frame9
+dependency10.to=Frame8
 dependency10.type=UsesDependency
 dependency11.from=ControlWorld
+<<<<<<< HEAD
 dependency11.to=InvisibleWallLeft
 dependency11.type=UsesDependency
 dependency12.from=ControlWorld
@@ -47,6 +56,33 @@ dependency18.to=InvisibleWallDown
 dependency18.type=UsesDependency
 dependency19.from=Player
 dependency19.to=InvisibleWallLeft
+=======
+dependency11.to=Frame9
+dependency11.type=UsesDependency
+dependency12.from=Frame1
+dependency12.to=Afton
+dependency12.type=UsesDependency
+dependency13.from=Frame5
+dependency13.to=Butterknife
+dependency13.type=UsesDependency
+dependency14.from=MyWorld
+dependency14.to=Player
+dependency14.type=UsesDependency
+dependency15.from=Player
+dependency15.to=InvisibleWallUp
+dependency15.type=UsesDependency
+dependency16.from=Player
+dependency16.to=InvisibleWallDown
+dependency16.type=UsesDependency
+dependency17.from=Player
+dependency17.to=InvisibleWallLeft
+dependency17.type=UsesDependency
+dependency18.from=Player
+dependency18.to=InvisibleWallRight
+dependency18.type=UsesDependency
+dependency19.from=Afton
+dependency19.to=Player
+>>>>>>> main
 dependency19.type=UsesDependency
 dependency2.from=ControlWorld
 dependency2.to=Player
@@ -58,24 +94,25 @@ dependency21.from=Afton
 dependency21.to=Player
 dependency21.type=UsesDependency
 dependency3.from=ControlWorld
-dependency3.to=Frame2
+dependency3.to=Butterknife
 dependency3.type=UsesDependency
 dependency4.from=ControlWorld
-dependency4.to=Frame3
+dependency4.to=Frame2
 dependency4.type=UsesDependency
 dependency5.from=ControlWorld
-dependency5.to=Frame4
+dependency5.to=Frame3
 dependency5.type=UsesDependency
 dependency6.from=ControlWorld
-dependency6.to=Frame5
+dependency6.to=Frame4
 dependency6.type=UsesDependency
 dependency7.from=ControlWorld
-dependency7.to=Frame6
+dependency7.to=Frame5
 dependency7.type=UsesDependency
 dependency8.from=ControlWorld
-dependency8.to=Frame7
+dependency8.to=Frame6
 dependency8.type=UsesDependency
 dependency9.from=ControlWorld
+<<<<<<< HEAD
 dependency9.to=Frame8
 dependency9.type=UsesDependency
 editor.fx.0.height=739
@@ -84,6 +121,16 @@ editor.fx.0.x=552
 editor.fx.0.y=100
 height=1000
 package.numDependencies=21
+=======
+dependency9.to=Frame7
+dependency9.type=UsesDependency
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=260
+editor.fx.0.y=67
+height=830
+package.numDependencies=19
+>>>>>>> main
 package.numTargets=18
 project.charset=windows-1252
 publish.hasSource=false
@@ -107,42 +154,50 @@ target1.width=120
 target1.x=0
 target1.y=0
 target10.height=70
+<<<<<<< HEAD
 target10.name=Frame8
+=======
+target10.name=Frame9
+>>>>>>> main
 target10.showInterface=false
 target10.type=ClassTarget
 target10.width=120
 target10.x=0
 target10.y=0
 target11.height=70
-target11.name=Frame7
+target11.name=Frame8
 target11.showInterface=false
 target11.type=ClassTarget
 target11.width=120
 target11.x=0
 target11.y=0
 target12.height=70
-target12.name=ControlWorld
+target12.name=Frame7
 target12.showInterface=false
 target12.type=ClassTarget
 target12.width=120
 target12.x=0
 target12.y=0
 target13.height=70
-target13.name=Frame6
+target13.name=ControlWorld
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=120
 target13.x=0
 target13.y=0
 target14.height=70
-target14.name=Frame5
+target14.name=Frame6
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=120
 target14.x=0
 target14.y=0
 target15.height=70
+<<<<<<< HEAD
 target15.name=BaseWallParams
+=======
+target15.name=Frame5
+>>>>>>> main
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=120
@@ -198,35 +253,43 @@ target5.width=120
 target5.x=0
 target5.y=0
 target6.height=70
-target6.name=Frame1
+target6.name=Butterknife
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=120
 target6.x=0
 target6.y=0
 target7.height=70
+<<<<<<< HEAD
 target7.name=InvisibleWallLeft
+=======
+target7.name=Frame1
+>>>>>>> main
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=120
 target7.x=0
 target7.y=0
 target8.height=70
-target8.name=Afton
+target8.name=InvisibleWallLeft
 target8.showInterface=false
 target8.type=ClassTarget
 target8.width=120
 target8.x=0
 target8.y=0
 target9.height=70
+<<<<<<< HEAD
 target9.name=Frame9
+=======
+target9.name=Afton
+>>>>>>> main
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
-width=1296
+width=1550
 world.lastInstantiated=ControlWorld
 xPosition=312
 yPosition=62

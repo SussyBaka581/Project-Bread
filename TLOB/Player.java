@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Player extends Actor
 {
+    boolean hasButterknife = false;
     int moveX = 5;
     int moveY = 5;
     public void act()

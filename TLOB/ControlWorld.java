@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ControlWorld extends World
 {   static Actor player;
+    static Actor butterknife;
     public World world;
     /**
      * Constructor for objects of class MyWorld.
@@ -19,8 +20,10 @@ public class ControlWorld extends World
         super(600, 400, 1);
         world = new Frame1();
         player = new Player();
+        butterknife = new Butterknife();
         Greenfoot.setWorld(world);
         world.addObject(player, 500, 400);
+        world.addObject(butterknife, 792, 187);
     }
     
     public void act()
@@ -39,6 +42,7 @@ public class ControlWorld extends World
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
+            world.addObject(butterknife, 792, 187);
             world.addObject(player, getWidth()-20, player.getY());
         }
         //forward to 3
@@ -69,6 +73,7 @@ public class ControlWorld extends World
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
+            world.addObject(butterknife, 792, 187);
             world.addObject(player, player.getX(), 20);
         }
         //up to 5

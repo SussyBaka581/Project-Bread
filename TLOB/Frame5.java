@@ -15,5 +15,6 @@ public class Frame5 extends ControlWorld
      */
     public Frame5()
     {
+        addObject(new Butterknife(), 500, 400);
     }
 }
