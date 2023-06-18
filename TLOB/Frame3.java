@@ -15,5 +15,6 @@ public class Frame3 extends ControlWorld
      */
     public Frame3()
     {
+        super(1000, 800, 1);
     }
 }

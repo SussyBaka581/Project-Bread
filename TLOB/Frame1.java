@@ -49,11 +49,9 @@ public class Frame1 extends ControlWorld
         right(980, 445);
         right(980, 520);
         right(980, 605);
-        right(980, 690);
-        right(980, 775);
+        right(980, 650);
         
-        up(20, 20);
-        up(105, 20);
+        up(145, 20);
         up(190, 20);
         up(275, 20);
         up(360, 20);
@@ -65,6 +63,9 @@ public class Frame1 extends ControlWorld
         up(860, 20);
         up(945, 20);
         up(1030, 20);
+        
+        right(100, 0);
+        up(1000, 700);
     }
     
     }

@@ -43,14 +43,14 @@ public class ControlWorld extends World
         //BOTTOM LEVEL LEFT/RIGHT
         
         //forward to 2
-        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15))
+        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15) && (player.getY() >= 710 && player.getY() <= 750))
         {
             world = new Frame2();
             Greenfoot.setWorld(world);
             world.addObject(player, 20, player.getY());
         }
         //backward to 1
-        if((player.getX() == 10 || player.getX() == 15))
+        if((player.getX() == 10 || player.getX() == 15) && (player.getY() >= 710 && player.getY() <= 750))
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
@@ -76,7 +76,7 @@ public class ControlWorld extends World
         //BOTTOM LEVEL UP/DOWN
         
         //up to 4
-        if(player.getY() == 0)
+        if(player.getY() == 0 && (player.getX() >= 45 && player.getX() <= 75))
         {
             world = new Frame4();
             Greenfoot.setWorld(world);
@@ -92,7 +92,7 @@ public class ControlWorld extends World
             world.addObject(player, player.getX(), 20);
         }
         //up to 5
-        if(player.getY() == 0)
+        if(player.getY() == 0 && (player.getX() >= 125 && player.getX() <= 160))
         {
             world = new Frame5();
             Greenfoot.setWorld(world);
