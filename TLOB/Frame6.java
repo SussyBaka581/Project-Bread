@@ -37,8 +37,10 @@ public class Frame6 extends ControlWorld
         down(520, 780);
         down(605, 780);
         down(690, 780);
-        down(775, 780);
-        down(860, 780);
+        down(735, 780);
+        //down(775, 780);
+        //down(860, 780);
+        down(900, 780);
         down(945, 780);
         down(1030, 780);
         
@@ -64,7 +66,11 @@ public class Frame6 extends ControlWorld
         up(690, 20);
         up(775, 20);
         up(860, 20);
-        up(945, 20);
-        up(1030, 20);
+        //up(945, 20);
+        //up(1030, 20);
+        
+        left(770, 800);
+        right(860, 800);
+        left(900, 0);
     }
 }

@@ -39,7 +39,11 @@ dependency14.from=ControlWorld
 dependency14.to=Frame9
 dependency14.type=UsesDependency
 dependency15.from=ControlWorld
+<<<<<<< HEAD
+dependency15.to=Frame8
+=======
 dependency15.to=InvisibleWallLeft
+>>>>>>> main
 dependency15.type=UsesDependency
 dependency16.from=ControlWorld
 dependency16.to=InvisibleWallRight
@@ -74,8 +78,13 @@ dependency24.type=UsesDependency
 dependency25.from=Player
 dependency25.to=InvisibleWallRight
 dependency25.type=UsesDependency
+<<<<<<< HEAD
+dependency26.from=Afton
+dependency26.to=Player
+=======
 dependency26.from=Player
 dependency26.to=Afton
+>>>>>>> main
 dependency26.type=UsesDependency
 dependency3.from=ControlWorld
 dependency3.to=Tripmine
@@ -98,11 +107,19 @@ dependency8.type=UsesDependency
 dependency9.from=ControlWorld
 dependency9.to=Frame4
 dependency9.type=UsesDependency
+<<<<<<< HEAD
+editor.fx.0.height=742
+editor.fx.0.width=814
+editor.fx.0.x=714
+editor.fx.0.y=302
+height=1030
+=======
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
 height=830
+>>>>>>> main
 package.numDependencies=26
 package.numTargets=23
 project.charset=windows-1252
@@ -281,7 +298,7 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
-width=1550
+width=1293
 world.lastInstantiated=ControlWorld
 xPosition=0
 yPosition=0
