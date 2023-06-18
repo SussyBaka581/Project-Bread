@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Herobrine extends Boss
 {
     int counter;
-    public Herobrine(int h, int a, String n, String d, CombatPlayer plr) {
-        super(h,a,n,d,plr);
+    public Herobrine(int h, int a, CombatPlayer plr) {
+        super(h,a,"Herobrine"," ",plr);
         counter = 0;
     }
     

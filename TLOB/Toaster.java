@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Toaster extends Boss
 {
     int counter;
-    public Toaster(int h, int a, String n, String d, CombatPlayer plr) {
-        super(h,a,n,d,plr);
+    public Toaster(int h, int a, CombatPlayer plr) {
+        super(h,a,"Toaster"," ",plr);
         counter = 0;
     }
     

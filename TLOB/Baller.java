@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Baller extends Boss
 {
     int counter;
-    public Baller(int h, int a, String n, String d, CombatPlayer plr) {
-        super(h,a,n,d,plr);
+    public Baller(int h, int a, CombatPlayer plr) {
+        super(h,a,"Baller", " ",plr);
         counter = 0;
     }
     

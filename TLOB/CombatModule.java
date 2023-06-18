@@ -41,13 +41,15 @@ public class CombatModule extends World
         addObject(PlayerBar, 484, 643);
         addObject(BossBar, 500, 50);
         addObject(Name, 144, 635);
-        currentBoss = new Baller(10,1,"Baller","He throw", P);
+        currentBoss = new Amogus(10,1, P);
         setPaintOrder(CombatPlayer.class);
+        addObject(currentBoss, 500, 225);
     }
     public void act() {
         if (isAttacking == true) {
             addObject(PlayerBar, 512, 760);
             addObject(BossBar, 500, 50);
+            addObject(currentBoss, 500, 225);
             currentBoss.Update();
             if (currentBoss.shouldAttack == true) {
                 Attack a = currentBoss.Attack();
@@ -67,6 +69,7 @@ public class CombatModule extends World
                 addObject(PlayerBar, 484, 643);
                 addObject(BossBar, 500, 50);
                 addObject(Name, 144, 635);
+                addObject(currentBoss, 500, 225);
                 setBackground("BlackDrop.jpg");
                 P.movePlr(148, 713);
             }

@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Amogus extends Boss
 {
     int counter;
-    public Amogus(int h, int a, String n, String d, CombatPlayer plr) {
-        super(h,a,n,d,plr);
+    public Amogus(int h, int a, CombatPlayer plr) {
+        super(h,a,"Amogus", " ",plr);
         counter = 0;
     }
     

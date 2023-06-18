@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class FrebbyBear extends Boss
 {
     int counter;
-    public FrebbyBear(int h, int a, String n, String d, CombatPlayer plr) {
-        super(h,a,n,d,plr);
+    public FrebbyBear(int h, int a, CombatPlayer plr) {
+        super(h,a,"FrebbyBear", " ",plr);
         counter = 0;
     }
     

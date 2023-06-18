@@ -25,6 +25,7 @@ public abstract class Boss extends Actor
         playa = plr;
         maxHealth = h;
         shouldAttack = false;
+        getImage().scale(250,250);
     }
     
     public void TakeDamage(){
