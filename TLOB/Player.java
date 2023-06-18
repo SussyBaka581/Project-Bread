@@ -31,7 +31,7 @@ public class Player extends Actor
             setLocation(getX()+moveX, getY());
         }
         //sprinting
-        if(Greenfoot.isKeyDown("shift")){
+        /*if(Greenfoot.isKeyDown("shift")){
             moveX = 10;
             moveY = 10;
         }
@@ -39,7 +39,7 @@ public class Player extends Actor
         else{
             moveX = 5;
             moveY = 5;
-        }
+        }*/
         
         //if(isTouching(Tripmine.class) && hasMine == false){
         //    removeTouching(Tripmine.class);

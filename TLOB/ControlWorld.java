@@ -31,7 +31,7 @@ public class ControlWorld extends World
         item4 = new Screws();
         Greenfoot.setWorld(world);
         world.addObject(player, 500, 400);
-        world.addObject(butterknife, 792, 187);
+        //world.addObject(butterknife, 792, 187);
         world.addObject(item1, 80, 700);
         //world.addObject(item2, 80, 100);
         //world.addObject(item3, 80, 100);
@@ -54,19 +54,18 @@ public class ControlWorld extends World
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
-            world.addObject(butterknife, 792, 187);
             world.addObject(item1, 85, 700);
             world.addObject(player, getWidth()-20, player.getY());
         }
         //forward to 3
-        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15)){
+        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15) && (player.getY() >= 510 && player.getY() <= 550)){
             world = new Frame3();
             Greenfoot.setWorld(world);
             world.addObject(item2, 80, 100);
             world.addObject(player, 20, player.getY());
         }
         //backward to 2
-        if((player.getX() == 10 || player.getX() == 15))
+        if((player.getX() == 10 || player.getX() == 15) && (player.getY() >= 510 && player.getY() <= 550))
         {
             world = new Frame2();
             Greenfoot.setWorld(world);
@@ -83,7 +82,7 @@ public class ControlWorld extends World
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 1
-        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15)
+        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15 && (player.getX() >= 45 && player.getX() <= 75))
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
@@ -96,10 +95,11 @@ public class ControlWorld extends World
         {
             world = new Frame5();
             Greenfoot.setWorld(world);
+            world.addObject(butterknife, 500, 400);
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 2
-        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15 && (player.getX() >= 125 && player.getX() <= 160))
+        if ((player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15) && (player.getX() >= 125 && player.getX() <= 160))
         {
             world = new Frame2();
             Greenfoot.setWorld(world);
@@ -113,7 +113,7 @@ public class ControlWorld extends World
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 3
-        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15/* &&(player.getX() >=800 && player.getX() <=830)*/)
+        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15 && (player.getX() >=800 && player.getX() <= 830))
         {
             world = new Frame3();
             Greenfoot.setWorld(world);
@@ -121,40 +121,10 @@ public class ControlWorld extends World
             world.addObject(player, player.getX(), 20);
         }
         
-        //MIDDLE ROW LEFT/RIGHT
-        
-        //forward to 5
-        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15))
-        {
-            world = new Frame5();
-            Greenfoot.setWorld(world);
-            world.addObject(player, 20, player.getY());
-        }
-        //backward to 4
-        if((player.getX() == 10 || player.getX() == 15))
-        {
-            world = new Frame4();
-            Greenfoot.setWorld(world);
-            world.addObject(player, getWidth()-20, player.getY());
-        }
-        //forward to 6
-        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15)){
-            world = new Frame6();
-            Greenfoot.setWorld(world);
-            world.addObject(player, 20, player.getY());
-        }
-        //backward to 5
-        if((player.getX() == 10 || player.getX() == 15))
-        {
-            world = new Frame5();
-            Greenfoot.setWorld(world);
-            world.addObject(player, getWidth()-20, player.getY());
-        }
-        
         //MIDDLE ROW UP/DOWN
         
         //up to 7
-        if(player.getY() == 0)
+        if(player.getY() == 0 && (player.getX() >= 300 && player.getX() <= 330))
         {
             world = new Frame7();
             Greenfoot.setWorld(world);
@@ -162,28 +132,14 @@ public class ControlWorld extends World
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 4
-        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15)
+        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15 && (player.getX() >= 300 && player.getX() <= 330))
         {
             world = new Frame4();
             Greenfoot.setWorld(world);
             world.addObject(player, player.getX(), 20);
         }
-        //up to 8
-        if(player.getY() == 0)
-        {
-            world = new Frame8();
-            Greenfoot.setWorld(world);
-            world.addObject(player, player.getX(), getHeight()-20);
-        }
-        //back to 5
-        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15)
-        {
-            world = new Frame5();
-            Greenfoot.setWorld(world);
-            world.addObject(player, player.getX(), 20);
-        }
         //up to 9
-        if(player.getY() == 0)
+        if(player.getY() == 0 && (player.getX() >= 925 && player.getX() <= 955))
         {
             world = new Frame9();
             Greenfoot.setWorld(world);
@@ -191,7 +147,7 @@ public class ControlWorld extends World
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 6
-        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15)
+        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15 && (player.getX() >= 925 && player.getX() <= 955))
         {
             world = new Frame6();
             Greenfoot.setWorld(world);
@@ -201,14 +157,14 @@ public class ControlWorld extends World
         //TOP ROW LEFT/RIGHT
         
         //forward to 8
-        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15))
+        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15) && (player.getY() >= 55 && player.getY() <= 85))
         {
             world = new Frame8();
             Greenfoot.setWorld(world);
             world.addObject(player, 20, player.getY());
         }
         //backward to 7
-        if((player.getX() == 10 || player.getX() == 15))
+        if((player.getX() == 10 || player.getX() == 15) && (player.getY() >= 55 && player.getY() <= 85))
         {
             world = new Frame7();
             Greenfoot.setWorld(world);
@@ -216,14 +172,14 @@ public class ControlWorld extends World
             world.addObject(player, getWidth()-20, player.getY());
         }
         //forward to 9
-        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15)){
+        if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15) && (player.getY() >= 220 && player.getY() <= 250)){
             world = new Frame9();
             Greenfoot.setWorld(world);
             world.addObject(item4, 80, 100);
             world.addObject(player, 20, player.getY());
         }
         //backward to 8
-        if((player.getX() == 10 || player.getX() == 15))
+        if((player.getX() == 10 || player.getX() == 15) && (player.getY() >= 220 && player.getY() <= 250))
         {
             world = new Frame8();
             Greenfoot.setWorld(world);

@@ -56,8 +56,10 @@ public class Frame4 extends ControlWorld
         up(20, 20);
         up(105, 20);
         up(190, 20);
-        up(275, 20);
-        up(360, 20);
+        up(235, 20);
+        //up(275, 20);
+        //up(360, 20);
+        up(400, 20);
         up(445, 20);
         up(520, 20);
         up(605, 20);
@@ -67,6 +69,8 @@ public class Frame4 extends ControlWorld
         up(945, 20);
         up(1030, 20);
         
+        left(275, 0);
+        right(355, 0);
         right(100, 800);
         down(150, 780);
     }
