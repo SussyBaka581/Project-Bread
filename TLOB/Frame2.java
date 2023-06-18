@@ -46,8 +46,9 @@ public class Frame2 extends ControlWorld
         right(980, 275);
         right(980, 360);
         right(980, 445);
-        right(980, 520);
-        right(980, 605);
+        right(980, 610);
+        //right(980, 520);
+        //right(980, 605);
         right(980, 690);
         right(980, 775);
         
@@ -68,5 +69,7 @@ public class Frame2 extends ControlWorld
         left(100, 0);
         right(185, 0);
         up(0, 700);
+        up(1000, 475);
+        down(1000, 560);
     }
 }
