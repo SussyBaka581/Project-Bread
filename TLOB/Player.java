@@ -9,6 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Player extends Actor
 {
     boolean hasButterknife = false;
+    boolean hasMine = false;
+    boolean hasElytra = false;
+    boolean hasVCover = false;
+    boolean hasScrews = false;
     int moveX = 5;
     int moveY = 5;
     public void act()
@@ -37,9 +41,21 @@ public class Player extends Actor
             moveY = 5;
         }
         
-        //Invisible wall detection
-        //if(isTouching(InvisibleWallLeft.class)){
-        //    moveX = 0;
+        //if(isTouching(Tripmine.class) && hasMine == false){
+        //    removeTouching(Tripmine.class);
+        //    hasMine = true;
+        //}
+        //if(isTouching(Elytra.class) && hasElytra == false){
+        //    removeTouching(Elytra.class);
+        //    hasElytra = true;
+        //}
+        //if(isTouching(VCover.class) && hasVCover == false){
+        //    removeTouching(VCover.class);
+        //    hasVCover = true;
+        //}
+        //if(isTouching(Screws.class) && hasScrews == false){
+        //    removeTouching(Screws.class);
+        //    hasScrews = true;
         //}
     }
 }

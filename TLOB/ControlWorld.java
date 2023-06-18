@@ -9,10 +9,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class ControlWorld extends World
 {   static Actor player;
     static Actor butterknife;
+    static Actor item1;
+    static Actor item2;
+    static Actor item3;
+    static Actor item4;
     public World world;
     /**
      * Constructor for objects of class MyWorld.
-     * 
+     * 55, 65
      */
     public ControlWorld()
     {    
@@ -21,9 +25,17 @@ public class ControlWorld extends World
         world = new Frame1();
         player = new Player();
         butterknife = new Butterknife();
+        item1 = new Tripmine();
+        item2 = new Elytra();
+        item3 = new VCover();
+        item4 = new Screws();
         Greenfoot.setWorld(world);
         world.addObject(player, 500, 400);
         world.addObject(butterknife, 792, 187);
+        world.addObject(item1, 80, 100);
+        //world.addObject(item2, 80, 100);
+        //world.addObject(item3, 80, 100);
+        //world.addObject(item4, 80, 100);
     }
     
     public void act()
@@ -43,12 +55,14 @@ public class ControlWorld extends World
             world = new Frame1();
             Greenfoot.setWorld(world);
             world.addObject(butterknife, 792, 187);
+            world.addObject(item1, 85, 100);
             world.addObject(player, getWidth()-20, player.getY());
         }
         //forward to 3
         if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15)){
             world = new Frame3();
             Greenfoot.setWorld(world);
+            world.addObject(item2, 80, 100);
             world.addObject(player, 20, player.getY());
         }
         //backward to 2
@@ -74,6 +88,7 @@ public class ControlWorld extends World
             world = new Frame1();
             Greenfoot.setWorld(world);
             world.addObject(butterknife, 792, 187);
+            world.addObject(item1, 85, 100);
             world.addObject(player, player.getX(), 20);
         }
         //up to 5
@@ -102,6 +117,7 @@ public class ControlWorld extends World
         {
             world = new Frame3();
             Greenfoot.setWorld(world);
+            world.addObject(item2, 80, 100);
             world.addObject(player, player.getX(), 20);
         }
         
@@ -142,6 +158,7 @@ public class ControlWorld extends World
         {
             world = new Frame7();
             Greenfoot.setWorld(world);
+            world.addObject(item3, 80, 100);
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 4
@@ -170,6 +187,7 @@ public class ControlWorld extends World
         {
             world = new Frame9();
             Greenfoot.setWorld(world);
+            world.addObject(item4, 80, 100);
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 6
@@ -194,12 +212,14 @@ public class ControlWorld extends World
         {
             world = new Frame7();
             Greenfoot.setWorld(world);
+            world.addObject(item3, 80, 100);
             world.addObject(player, getWidth()-20, player.getY());
         }
         //forward to 9
         if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15)){
             world = new Frame9();
             Greenfoot.setWorld(world);
+            world.addObject(item4, 80, 100);
             world.addObject(player, 20, player.getY());
         }
         //backward to 8
