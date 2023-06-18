@@ -24,7 +24,7 @@ public class CombatModule extends World
     public static Boss currentBoss;
     public static int fightCounter;
     public static int fightDuration = 1000;
-    //----------- finish the rest of the buttons for this pls
+    public GreenfootSound music = new GreenfootSound("Toaster.mp3");
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -41,17 +41,19 @@ public class CombatModule extends World
         addObject(PlayerBar, 484, 643);
         addObject(BossBar, 500, 50);
         addObject(Name, 144, 635);
-        currentBoss = new Amogus(10,1, P);
+        currentBoss = new Toaster(10,1, P);
         setPaintOrder(CombatPlayer.class);
         addObject(currentBoss, 500, 225);
     }
     public void act() {
+        music.play();
+        music.setVolume(20);
         if (isAttacking == true) {
             addObject(PlayerBar, 512, 760);
             addObject(BossBar, 500, 50);
             addObject(currentBoss, 500, 225);
             currentBoss.Update();
-            if (currentBoss.shouldAttack == true) {
+            if (currentBoss.shouldAttack != "") {
                 Attack a = currentBoss.Attack();
                 addObject(a, 1, 1);
             }

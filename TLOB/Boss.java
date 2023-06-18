@@ -14,7 +14,7 @@ public abstract class Boss extends Actor
     public String name;
     public String desc;
     public CombatPlayer playa;
-    public boolean shouldAttack;
+    public String shouldAttack;
     public int maxHealth;
     
     public Boss(int h, int a, String n, String d, CombatPlayer plr) {
@@ -24,7 +24,7 @@ public abstract class Boss extends Actor
         desc = d;
         playa = plr;
         maxHealth = h;
-        shouldAttack = false;
+        shouldAttack = "";
         getImage().scale(250,250);
     }
     

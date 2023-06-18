@@ -16,8 +16,13 @@ public class Baller extends Boss
     
     @Override
     public Attack Attack() {
-        Attack bullet = new Attack("Bullet", Color.WHITE, 0, 500, 15, playa);
-        shouldAttack = false;
+        Attack bullet;
+        if(shouldAttack == "Bullet") {
+            bullet = new Attack("Bullet", Color.WHITE, 0, 500, 10, playa);
+        } else {
+            bullet = new Attack("Bullet", Color.WHITE, 0, 500, 10, playa);
+        }
+        shouldAttack = "";
         return bullet;
     }
     
@@ -29,8 +34,8 @@ public class Baller extends Boss
     public void Update()
     {
         counter++;
-        if (counter%100 == 0) {
-            shouldAttack = true;
+        if (counter%60 == 0) {
+            shouldAttack = "Bullet";
         }
     }
 }

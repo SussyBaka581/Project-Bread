@@ -16,8 +16,15 @@ public class Amogus extends Boss
     
     @Override
     public Attack Attack() {
-        Attack bullet = new Attack("Bullet", Color.WHITE, 0, 500, 15, playa);
-        shouldAttack = false;
+        Attack bullet;
+        if (shouldAttack == "Beam") {
+            bullet = new Attack("Beam", Color.RED, 40, 500, 50, playa);
+        } else if(shouldAttack == "Bullet") {
+            bullet = new Attack("Bullet", Color.RED, 0, 500, 40, playa);
+        } else {
+            bullet = new Attack("Beam", Color.RED, 40, 500, 50, playa);
+        }
+        shouldAttack = "";
         return bullet;
     }
     
@@ -30,7 +37,9 @@ public class Amogus extends Boss
     {
         counter++;
         if (counter%100 == 0) {
-            shouldAttack = true;
+            shouldAttack = "Beam";
+        } else if (counter%101 == 0) {
+            shouldAttack = "Bullet";
         }
     }
 }

@@ -16,8 +16,13 @@ public class Herobrine extends Boss
     
     @Override
     public Attack Attack() {
-        Attack bullet = new Attack("Bullet", Color.WHITE, 50, 500, 15, playa);
-        shouldAttack = false;
+        Attack bullet;
+        if (shouldAttack == "Beam"){
+            bullet = new Attack("Beam", Color.WHITE, 40, 500, 15, playa);
+        } else {
+            bullet = new Attack("Beam", Color.WHITE, 40, 500, 15, playa);
+        }
+        shouldAttack = "";
         return bullet;
     }
     
@@ -29,8 +34,8 @@ public class Herobrine extends Boss
     public void Update()
     {
         counter++;
-        if (counter%100 == 0) {
-            shouldAttack = true;
+        if (counter%70 == 0) {
+            shouldAttack = "Beam";
         }
     }
 }

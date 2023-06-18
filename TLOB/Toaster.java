@@ -16,8 +16,17 @@ public class Toaster extends Boss
     
     @Override
     public Attack Attack() {
-        Attack bullet = new Attack("Bullet", Color.WHITE, 0, 500, 15, playa);
-        shouldAttack = false;
+        Attack bullet;
+        if (shouldAttack == "Beam"){
+            bullet = new Attack("Beam", Color.WHITE, 60, 500, 5, playa);
+        } else if (shouldAttack == "Bullet"){
+            bullet = new Attack("Bullet", Color.WHITE, 0, 500, 20, playa);
+        } else if (shouldAttack == "Toast"){
+            bullet = new Attack("Toast", Color.WHITE, 50, 250, 10, playa);
+        } else {
+            bullet = new Attack("Toast", Color.WHITE, 50, 250, 10, playa);
+        }
+        shouldAttack = "";
         return bullet;
     }
     
@@ -29,8 +38,14 @@ public class Toaster extends Boss
     public void Update()
     {
         counter++;
+        if (counter%150 == 0) {
+            shouldAttack = "Beam";
+        }
         if (counter%100 == 0) {
-            shouldAttack = true;
+            shouldAttack = "Bullet";
+        }
+        if (counter%60 == 0) {
+            shouldAttack = "Toast";
         }
     }
 }

@@ -16,8 +16,15 @@ public class FrebbyBear extends Boss
     
     @Override
     public Attack Attack() {
-        Attack bullet = new Attack("Bullet", Color.WHITE, 0, 500, 15, playa);
-        shouldAttack = false;
+        Attack bullet;
+        if(shouldAttack == "Bullet") {
+            bullet = new Attack("Bullet", Color.WHITE, 0, 500, 10, playa);
+        } else if (shouldAttack == "Beam"){
+            bullet = new Attack("Beam", Color.WHITE, 50, 500, 30, playa);
+        } else {
+            bullet = new Attack("Bullet", Color.WHITE, 0, 500, 10, playa);
+        }
+        shouldAttack = "";
         return bullet;
     }
     
@@ -30,7 +37,9 @@ public class FrebbyBear extends Boss
     {
         counter++;
         if (counter%100 == 0) {
-            shouldAttack = true;
+            shouldAttack = "Bullet";
+        } else if (counter%101 == 0) {
+            shouldAttack = "Beam";
         }
     }
 }

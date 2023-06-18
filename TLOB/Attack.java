@@ -56,15 +56,15 @@ public class Attack extends Actor
         if (CombatModule.isAttacking == true) {
             update();
             if (t == "Bullet") {
-                x += Math.cos((rot) * (Math.PI / 180))*2;
-                y += Math.sin((rot) * (Math.PI / 180))*2;
+                x += Math.cos((rot) * (Math.PI / 180))*6;
+                y += Math.sin((rot) * (Math.PI / 180))*6;
             }
             setLocation((int) x,(int) y);
             setRotation(rot);
             
-            if (counter  != 270) {
+            if (counter  != 100) {
                counter++;
-             } else if (counter == 270){
+             } else if (counter == 100){
                getWorld().removeObject(this);
             }
         } 
@@ -78,6 +78,8 @@ public class Attack extends Actor
             setImage(new GreenfootImage(l+1,w+1));       
         } else if (t == "Bullet") {
             setImage(new GreenfootImage(w+1,w+1));
+        } else if (t == "Toast") {
+            setImage(new GreenfootImage("Toast.png"));
         }
         GreenfootImage img = getImage();
         if (doesDamage == true) {
@@ -89,6 +91,8 @@ public class Attack extends Actor
             img.fillRect(0,0, l, w);
         } else if (t == "Bullet") {
             img.fillRect(0,0, w, w);
+        } else if (t == "Toast") {
+            getImage().scale(100,100);
         }
     }
 }

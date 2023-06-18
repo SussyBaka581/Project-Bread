@@ -64,7 +64,7 @@ public class CombatPlayer extends Actor
             CombatModule.currentBoss.TakeDamage();
             clearScreen();
       }
-      else if (isTouching(ActBtn.class) && (Greenfoot.isKeyDown("enter"))) {
+      /*else if (isTouching(ActBtn.class) && (Greenfoot.isKeyDown("enter"))) {
             getWorld().setBackground("SubMenuDrop.png");
             CombatModule.inActMenu = true;
             clearScreen();
@@ -73,7 +73,7 @@ public class CombatPlayer extends Actor
             getWorld().setBackground("SubMenuDrop.png");
             CombatModule.inItemMenu = true;
             clearScreen();
-      }
+      }*/
       else if (isTouching(MercyBtn.class) && (Greenfoot.isKeyDown("enter"))) {
             getWorld().setBackground("SubMenuDrop.png");
             clearScreen();
@@ -84,6 +84,8 @@ public class CombatPlayer extends Actor
       if (health <= 0) {
           getWorld().removeObject(null);
           Greenfoot.setWorld(new GameOver());
+          inMenu = true;
+          CombatModule.isAttacking = false;
           health = 10;
       }
     }
