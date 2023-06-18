@@ -24,14 +24,14 @@ public class ControlWorld extends World
         super(600, 400, 1);
         world = new Frame1();
         player = new Player();
-        butterknife = new Butterknife();
+        //butterknife = new Butterknife();
         item1 = new Tripmine();
         item2 = new Elytra();
         item3 = new VCover();
         item4 = new Screws();
         Greenfoot.setWorld(world);
         world.addObject(player, 500, 400);
-        world.addObject(butterknife, 792, 187);
+        //world.addObject(butterknife, 792, 187);
         world.addObject(item1, 80, 700);
         //world.addObject(item2, 80, 100);
         //world.addObject(item3, 80, 100);
@@ -54,7 +54,7 @@ public class ControlWorld extends World
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
-            world.addObject(butterknife, 792, 187);
+            //world.addObject(butterknife, 792, 187);
             world.addObject(item1, 85, 700);
             world.addObject(player, getWidth()-20, player.getY());
         }

@@ -16,7 +16,8 @@ public class Elytra extends Player
     public void act()
     {
         if(isTouching(Player.class) && hasElytra == false){
-            elytra = new GreenfootImage("jerma2.jpg");
+            elytra = new GreenfootImage("tombstone2.png");
+            elytra.scale(50,50);
             setImage(elytra);
             hasElytra = true;
         }

@@ -16,7 +16,8 @@ public class VCover extends Player
     public void act()
     {
         if(isTouching(Player.class) && hasVCover == false){
-            vcover = new GreenfootImage("jerma2.jpg");
+            vcover = new GreenfootImage("tombstone2.png");
+            vcover.scale(50,50);
             setImage(vcover);
             hasVCover = true;
         }
