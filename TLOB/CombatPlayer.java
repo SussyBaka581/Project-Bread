@@ -12,6 +12,7 @@ public class CombatPlayer extends Actor
     private int wait;
     public boolean inMenu = true;
     public boolean inSubMenu = false;
+    public static int health = 10;
     /**
      * Act - do whatever the Sussy_baka wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -76,6 +77,11 @@ public class CombatPlayer extends Actor
             clearScreen();
             CombatModule.inMercyMenu = true;
             //have it end the combat phase and go back to main game
+      }
+      if (health <= 0) {
+          getWorld().removeObject(null);
+          Greenfoot.setWorld(new GameOver());
+          health = 10;
       }
     }
     public void clearScreen() {

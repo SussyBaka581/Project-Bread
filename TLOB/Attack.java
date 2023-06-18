@@ -17,7 +17,8 @@ public class Attack extends Actor
     private double y = 0;
     private int rot = 0;
     private CombatPlayer playa;
-    private int counter;
+    private int counter = 0;
+    private int damageCD = 100;
 
     public Attack(String type, Color color, int delay, int length, int width, CombatPlayer plr) {
         t = type;
@@ -36,19 +37,31 @@ public class Attack extends Actor
      */
     public void act()
     {
-        update();
-        x += Math.cos((rot) * (Math.PI / 180))*2;
-        y += Math.sin((rot) * (Math.PI / 180))*2; //move wasnt working so whatever
-        setLocation((int) x,(int) y);
-        setRotation(rot);
-    
+        if (damageCD != 100) {
+            damageCD++; 
+           } else if (isTouching(CombatPlayer.class) && damageCD >= 100){
+            CombatPlayer.health -= 1;   
+            System.out.println(playa.health);
+            damageCD = 0;
+            }
+        if (CombatModule.isAttacking == true) {
+            update();
+            x += Math.cos((rot) * (Math.PI / 180))*2;
+            y += Math.sin((rot) * (Math.PI / 180))*2; //move wasnt working so whatever
+            setLocation((int) x,(int) y);
+            setRotation(rot);
+            
+            if (counter  != 270) {
+               counter++;
+             } else if (counter == 270){
+               getWorld().removeObject(this);
+            }
+        }
     }
     public void update(){
         setImage(new GreenfootImage(w+1,w+1));
         GreenfootImage img = getImage();
         img.setColor(c);
-        
-        
         
         if (t == "Beam") {
             

@@ -55,5 +55,8 @@ public class CombatModule extends World
             addObject(label, 320, 800);
             inMercyMenu = false;
         }
+        if (P.health <= 0) {
+            //add in death world
+        }
     }
 }
