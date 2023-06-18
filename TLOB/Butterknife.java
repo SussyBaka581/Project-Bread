@@ -15,10 +15,9 @@ public class Butterknife extends Player
      */
     public void act()
     {
-        if(isTouching(Player.class) && hasButterknife == false){
+        if(isTouching(Player.class)){
             myImage = new GreenfootImage("jerma2.jpg");
             setImage(myImage);
-            hasButterknife = true;
         }
     }
 }

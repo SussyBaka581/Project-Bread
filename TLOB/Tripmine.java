@@ -15,11 +15,10 @@ public class Tripmine extends Player
      */
     public void act()
     {
-        if(isTouching(Player.class) && hasMine == false){
+        if(isTouching(Player.class)){
             mine = new GreenfootImage("tombstone2.png");
             mine.scale(50,50);
             setImage(mine);
-            hasMine = true;
         }
     }
 }

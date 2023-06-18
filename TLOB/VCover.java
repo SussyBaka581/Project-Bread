@@ -15,11 +15,10 @@ public class VCover extends Player
      */
     public void act()
     {
-        if(isTouching(Player.class) && hasVCover == false){
+        if(isTouching(Player.class)){
             vcover = new GreenfootImage("tombstone2.png");
             vcover.scale(50,50);
             setImage(vcover);
-            hasVCover = true;
         }
     }
 }
