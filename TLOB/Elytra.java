@@ -15,11 +15,10 @@ public class Elytra extends Player
      */
     public void act()
     {
-        if(isTouching(Player.class) && hasElytra == false){
+        if(isTouching(Player.class)){
             elytra = new GreenfootImage("tombstone2.png");
             elytra.scale(50,50);
             setImage(elytra);
-            hasElytra = true;
         }
     }
 }

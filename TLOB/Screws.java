@@ -15,11 +15,10 @@ public class Screws extends Player
      */
     public void act()
     {
-        if(isTouching(Player.class) && hasScrews == false){
+        if(isTouching(Player.class)){
             screws = new GreenfootImage("tombstone2.png");
             screws.scale(50,50);
             setImage(screws);
-            hasScrews = true;
         }
     }
 }

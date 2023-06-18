@@ -33,13 +33,29 @@ dependency12.from=ControlWorld
 dependency12.to=Frame6
 dependency12.type=UsesDependency
 dependency13.from=ControlWorld
+<<<<<<< HEAD
 dependency13.to=Frame7
+=======
+<<<<<<< HEAD
+dependency13.to=Frame7
+=======
+dependency13.to=Frame9
+>>>>>>> main
+>>>>>>> main
 dependency13.type=UsesDependency
 dependency14.from=ControlWorld
 dependency14.to=Frame9
 dependency14.type=UsesDependency
 dependency15.from=ControlWorld
+<<<<<<< HEAD
 dependency15.to=Frame8
+=======
+<<<<<<< HEAD
+dependency15.to=Frame8
+=======
+dependency15.to=InvisibleWallLeft
+>>>>>>> main
+>>>>>>> main
 dependency15.type=UsesDependency
 dependency16.from=ControlWorld
 dependency16.to=InvisibleWallLeft
@@ -56,8 +72,18 @@ dependency19.type=UsesDependency
 dependency2.from=ControlWorld
 dependency2.to=Player
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 dependency20.from=Frame6
 dependency20.to=Afton
+=======
+<<<<<<< HEAD
+dependency20.from=Frame6
+dependency20.to=Afton
+=======
+dependency20.from=MyWorld
+dependency20.to=Player
+>>>>>>> main
+>>>>>>> main
 dependency20.type=UsesDependency
 dependency21.from=MyWorld
 dependency21.to=Player
@@ -74,12 +100,36 @@ dependency24.type=UsesDependency
 dependency25.from=Player
 dependency25.to=InvisibleWallRight
 dependency25.type=UsesDependency
+<<<<<<< HEAD
 dependency26.from=Player
 dependency26.to=Afton
 dependency26.type=UsesDependency
+=======
+<<<<<<< HEAD
+dependency26.from=Player
+dependency26.to=Afton
+dependency26.type=UsesDependency
+dependency27.from=Player
+dependency27.to=Tripmine
+dependency27.type=UsesDependency
+dependency28.from=Player
+dependency28.to=Butterknife
+dependency28.type=UsesDependency
+dependency29.from=Player
+dependency29.to=Elytra
+dependency29.type=UsesDependency
+=======
+>>>>>>> main
+>>>>>>> main
 dependency3.from=ControlWorld
 dependency3.to=Butterknife
 dependency3.type=UsesDependency
+dependency30.from=Player
+dependency30.to=Screws
+dependency30.type=UsesDependency
+dependency31.from=Player
+dependency31.to=VCover
+dependency31.type=UsesDependency
 dependency4.from=ControlWorld
 dependency4.to=Tripmine
 dependency4.type=UsesDependency
@@ -98,12 +148,25 @@ dependency8.type=UsesDependency
 dependency9.from=ControlWorld
 dependency9.to=Frame3
 dependency9.type=UsesDependency
+<<<<<<< HEAD
+editor.fx.0.height=735
+editor.fx.0.width=816
+editor.fx.0.x=427
+editor.fx.0.y=196
+height=1056
+package.numDependencies=31
+=======
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=552
 editor.fx.0.y=100
 height=1030
+<<<<<<< HEAD
 package.numDependencies=26
+=======
+package.numDependencies=25
+>>>>>>> main
+>>>>>>> main
 package.numTargets=23
 project.charset=windows-1252
 publish.hasSource=false
@@ -281,7 +344,7 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
-width=1293
+width=1936
 world.lastInstantiated=ControlWorld
 xPosition=0
 yPosition=0
