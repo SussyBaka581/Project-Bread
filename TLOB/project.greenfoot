@@ -33,13 +33,21 @@ dependency12.from=ControlWorld
 dependency12.to=Frame6
 dependency12.type=UsesDependency
 dependency13.from=ControlWorld
+<<<<<<< HEAD
 dependency13.to=Frame7
+=======
+dependency13.to=Frame9
+>>>>>>> main
 dependency13.type=UsesDependency
 dependency14.from=ControlWorld
-dependency14.to=Frame9
+dependency14.to=Frame8
 dependency14.type=UsesDependency
 dependency15.from=ControlWorld
+<<<<<<< HEAD
 dependency15.to=Frame8
+=======
+dependency15.to=InvisibleWallLeft
+>>>>>>> main
 dependency15.type=UsesDependency
 dependency16.from=ControlWorld
 dependency16.to=InvisibleWallLeft
@@ -56,24 +64,30 @@ dependency19.type=UsesDependency
 dependency2.from=ControlWorld
 dependency2.to=Player
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 dependency20.from=Frame6
 dependency20.to=Afton
+=======
+dependency20.from=MyWorld
+dependency20.to=Player
+>>>>>>> main
 dependency20.type=UsesDependency
-dependency21.from=MyWorld
-dependency21.to=Player
+dependency21.from=Player
+dependency21.to=InvisibleWallUp
 dependency21.type=UsesDependency
 dependency22.from=Player
-dependency22.to=InvisibleWallUp
+dependency22.to=InvisibleWallDown
 dependency22.type=UsesDependency
 dependency23.from=Player
-dependency23.to=InvisibleWallDown
+dependency23.to=InvisibleWallLeft
 dependency23.type=UsesDependency
 dependency24.from=Player
-dependency24.to=InvisibleWallLeft
+dependency24.to=InvisibleWallRight
 dependency24.type=UsesDependency
 dependency25.from=Player
-dependency25.to=InvisibleWallRight
+dependency25.to=Afton
 dependency25.type=UsesDependency
+<<<<<<< HEAD
 dependency26.from=Player
 dependency26.to=Afton
 dependency26.type=UsesDependency
@@ -86,6 +100,8 @@ dependency28.type=UsesDependency
 dependency29.from=Player
 dependency29.to=Elytra
 dependency29.type=UsesDependency
+=======
+>>>>>>> main
 dependency3.from=ControlWorld
 dependency3.to=Butterknife
 dependency3.type=UsesDependency
@@ -113,12 +129,21 @@ dependency8.type=UsesDependency
 dependency9.from=ControlWorld
 dependency9.to=Frame3
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=735
 editor.fx.0.width=816
 editor.fx.0.x=427
 editor.fx.0.y=196
 height=1056
 package.numDependencies=31
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+height=1030
+package.numDependencies=25
+>>>>>>> main
 package.numTargets=23
 project.charset=windows-1252
 publish.hasSource=false

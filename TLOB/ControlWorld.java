@@ -54,7 +54,10 @@ public class ControlWorld extends World
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
             //world.addObject(butterknife, 792, 187);
             world.addObject(item1, 85, 700);
             world.addObject(player, getWidth()-20, player.getY());
