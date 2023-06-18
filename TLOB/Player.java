@@ -42,8 +42,24 @@ public class Player extends Actor
             moveY = 5;
         }*/
         
+        //item booleans
         if(isTouching(Afton.class)){
             hasScrewdriver = true;
+        }
+        if(isTouching(Tripmine.class)){
+            hasMine = true;
+        }
+        if(isTouching(Butterknife.class)){
+            hasButterknife = true;
+        }
+        if(isTouching(Elytra.class)){
+            hasElytra = true;
+        }
+        if(isTouching(Screws.class)){
+            hasScrews = true;
+        }
+        if(isTouching(VCover.class)){
+            hasVCover = true;
         }
     }
 }
