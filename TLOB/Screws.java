@@ -16,7 +16,8 @@ public class Screws extends Player
     public void act()
     {
         if(isTouching(Player.class) && hasScrews == false){
-            screws = new GreenfootImage("jerma2.jpg");
+            screws = new GreenfootImage("tombstone2.png");
+            screws.scale(50,50);
             setImage(screws);
             hasScrews = true;
         }
