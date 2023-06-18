@@ -25,6 +25,7 @@ public class CombatModule extends World
     public static int fightCounter;
     public static int fightDuration = 1000;
     public GreenfootSound music = new GreenfootSound("Toaster.mp3");
+    // change music file name to boss name
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -41,7 +42,7 @@ public class CombatModule extends World
         addObject(PlayerBar, 484, 643);
         addObject(BossBar, 500, 50);
         addObject(Name, 144, 635);
-        currentBoss = new Toaster(10,1, P);
+        currentBoss = new Toaster(10,1, P); // change new name to current boss name
         setPaintOrder(CombatPlayer.class);
         addObject(currentBoss, 500, 225);
     }
