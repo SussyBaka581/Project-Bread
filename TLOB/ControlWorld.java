@@ -32,7 +32,7 @@ public class ControlWorld extends World
         Greenfoot.setWorld(world);
         world.addObject(player, 500, 400);
         world.addObject(butterknife, 792, 187);
-        world.addObject(item1, 80, 100);
+        world.addObject(item1, 80, 700);
         //world.addObject(item2, 80, 100);
         //world.addObject(item3, 80, 100);
         //world.addObject(item4, 80, 100);
@@ -55,7 +55,7 @@ public class ControlWorld extends World
             world = new Frame1();
             Greenfoot.setWorld(world);
             world.addObject(butterknife, 792, 187);
-            world.addObject(item1, 85, 100);
+            world.addObject(item1, 85, 700);
             world.addObject(player, getWidth()-20, player.getY());
         }
         //forward to 3
@@ -87,8 +87,8 @@ public class ControlWorld extends World
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
-            world.addObject(butterknife, 792, 187);
-            world.addObject(item1, 85, 100);
+            //world.addObject(butterknife, 792, 187);
+            world.addObject(item1, 85, 700);
             world.addObject(player, player.getX(), 20);
         }
         //up to 5
@@ -99,21 +99,21 @@ public class ControlWorld extends World
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 2
-        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15)
+        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15 && (player.getX() >= 125 && player.getX() <= 160))
         {
             world = new Frame2();
             Greenfoot.setWorld(world);
             world.addObject(player, player.getX(), 20);
         }
         //up to 6
-        if(player.getY() == 0)
+        if(player.getY() == 0 && (player.getX() >=800 && player.getX() <= 830))
         {
             world = new Frame6();
             Greenfoot.setWorld(world);
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 3
-        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15)
+        if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15/* &&(player.getX() >=800 && player.getX() <=830)*/)
         {
             world = new Frame3();
             Greenfoot.setWorld(world);
