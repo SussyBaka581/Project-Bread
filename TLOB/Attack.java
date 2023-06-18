@@ -19,6 +19,8 @@ public class Attack extends Actor
     private CombatPlayer playa;
     private int counter = 0;
     private int damageCD = 100;
+    public boolean doesDamage;
+    private int delayCounter = 0;
 
     public Attack(String type, Color color, int delay, int length, int width, CombatPlayer plr) {
         t = type;
@@ -28,8 +30,15 @@ public class Attack extends Actor
         l = length;
         playa = plr;
         rot = Greenfoot.getRandomNumber(360);
-        x = plr.getX() - (Math.cos(rot * (Math.PI / 180)) * length / 2);
-        y = plr.getY() - (Math.sin(rot * (Math.PI / 180)) * length / 2);
+        x = plr.getX();
+        y = plr.getY();
+        if (t == "Bullet"){
+            x -= (Math.cos(rot * (Math.PI / 180)) * length / 2);
+            y -= (Math.sin(rot * (Math.PI / 180)) * length / 2);
+            doesDamage = true;
+        } else {
+            doesDamage = false;
+        }
     }
     /**
      * Act - do whatever the Attack wants to do. This method is called whenever
@@ -39,15 +48,17 @@ public class Attack extends Actor
     {
         if (damageCD != 100) {
             damageCD++; 
-           } else if (isTouching(CombatPlayer.class) && damageCD >= 100){
+           } else if (isTouching(CombatPlayer.class) && damageCD >= 100 && doesDamage == true){
             CombatPlayer.health -= 1;   
-            System.out.println(playa.health);
+            getWorld().removeObject(this);
             damageCD = 0;
             }
         if (CombatModule.isAttacking == true) {
             update();
-            x += Math.cos((rot) * (Math.PI / 180))*2;
-            y += Math.sin((rot) * (Math.PI / 180))*2; //move wasnt working so whatever
+            if (t == "Bullet") {
+                x += Math.cos((rot) * (Math.PI / 180))*2;
+                y += Math.sin((rot) * (Math.PI / 180))*2;
+            }
             setLocation((int) x,(int) y);
             setRotation(rot);
             
@@ -56,17 +67,27 @@ public class Attack extends Actor
              } else if (counter == 270){
                getWorld().removeObject(this);
             }
+        } 
+        delayCounter++;
+        if (delayCounter >= d) {
+            doesDamage = true;
         }
     }
     public void update(){
-        setImage(new GreenfootImage(w+1,w+1));
-        GreenfootImage img = getImage();
-        img.setColor(c);
-        
         if (t == "Beam") {
-            
+            setImage(new GreenfootImage(l+1,w+1));       
+        } else if (t == "Bullet") {
+            setImage(new GreenfootImage(w+1,w+1));
         }
-        if (t == "Bullet") {
+        GreenfootImage img = getImage();
+        if (doesDamage == true) {
+            img.setColor(c); 
+        } else {
+            img.setColor(Color.GRAY);
+        }
+        if (t == "Beam") {
+            img.fillRect(0,0, l, w);
+        } else if (t == "Bullet") {
             img.fillRect(0,0, w, w);
         }
     }

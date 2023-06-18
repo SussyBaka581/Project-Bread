@@ -15,6 +15,7 @@ public abstract class Boss extends Actor
     public String desc;
     public CombatPlayer playa;
     public boolean shouldAttack;
+    public int maxHealth;
     
     public Boss(int h, int a, String n, String d, CombatPlayer plr) {
         health = h;
@@ -22,6 +23,7 @@ public abstract class Boss extends Actor
         name = n;
         desc = d;
         playa = plr;
+        maxHealth = h;
         shouldAttack = false;
     }
     

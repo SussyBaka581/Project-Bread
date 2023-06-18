@@ -9,9 +9,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Label extends Actor
 {
     public Label(String content) {
-        GreenfootImage img = new GreenfootImage(content.length()*20,550);
+        GreenfootImage img = new GreenfootImage(content.length()*30,50);
 
-        Font font = new Font("Arial", 40);
+        Font font = new Font("Cambria", 40);
         img.setFont(font);
         
         img.setColor(new Color(255,255,255));

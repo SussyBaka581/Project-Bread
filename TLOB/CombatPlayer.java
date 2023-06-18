@@ -10,8 +10,8 @@ import java.util.Collection;
 public class CombatPlayer extends Actor
 {
     private int wait;
-    public boolean inMenu = true;
-    public boolean inSubMenu = false;
+    public static boolean inMenu = true;
+    public static boolean inSubMenu = false;
     public static int health = 10;
     /**
      * Act - do whatever the Sussy_baka wants to do. This method is called whenever
@@ -56,10 +56,12 @@ public class CombatPlayer extends Actor
         //-----------------------------button movement scripts
         
       if (isTouching(FightBtn.class) && (Greenfoot.isKeyDown("enter"))) {
+            CombatModule.fightCounter = 0;
             getWorld().setBackground("FightDrop.png");
             inMenu = false;
             CombatModule.isAttacking = true;
             setLocation(500, 550);
+            CombatModule.currentBoss.TakeDamage();
             clearScreen();
       }
       else if (isTouching(ActBtn.class) && (Greenfoot.isKeyDown("enter"))) {
@@ -76,6 +78,7 @@ public class CombatPlayer extends Actor
             getWorld().setBackground("SubMenuDrop.png");
             clearScreen();
             CombatModule.inMercyMenu = true;
+            setLocation(120, 550);
             //have it end the combat phase and go back to main game
       }
       if (health <= 0) {
@@ -88,6 +91,9 @@ public class CombatPlayer extends Actor
         Collection objects = getWorld().getObjects(null);
         objects.remove(this);
         getWorld().removeObjects(objects);
+    }
+    public void movePlr(int x, int y){
+        setLocation(x,y);
     }
 }
 
