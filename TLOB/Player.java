@@ -8,12 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Player extends Actor
 {
-    boolean hasButterknife = true;
-    boolean hasMine = true;
-    boolean hasElytra = true;
-    boolean hasVCover = true;
-    boolean hasScrews = true;
-    boolean hasScrewdriver = true;
+    boolean hasButterknife = false;
+    boolean hasMine = false;
+    boolean hasElytra = false;
+    boolean hasVCover = false;
+    boolean hasScrews = false;
+    boolean hasScrewdriver = false;
     boolean doorNotif = false;
     int moveX = 5;
     int moveY = 5;

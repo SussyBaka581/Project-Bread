@@ -26,7 +26,7 @@ public class ControlWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
-        world = new Frame8();
+        world = new Frame2();
         player = new Player();
         butterknife = new Butterknife();
         item1 = new Tripmine();
