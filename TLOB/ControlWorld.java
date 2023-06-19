@@ -33,10 +33,6 @@ public class ControlWorld extends World
         item2 = new Elytra();
         item3 = new VCover();
         item4 = new Screws();
-        frebster = new F();
-        sussyAmogus = new A();
-        baller = new B();
-        herobrine = new H();
         
         Greenfoot.setWorld(world);
         world.addObject(player, 500, 400);
@@ -63,9 +59,9 @@ public class ControlWorld extends World
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
-            //world.addObject(butterknife, 792, 187);
+            world.addObject(butterknife, 792, 187);
             world.addObject(item1, 85, 700);
-            world.addObject(baller, 700, 300);
+            //world.addObject(baller, 700, 300);
             world.addObject(player, getWidth()-20, player.getY());
         }
         //forward to 3
@@ -73,7 +69,7 @@ public class ControlWorld extends World
             world = new Frame3();
             Greenfoot.setWorld(world);
             world.addObject(item2, 80, 100);
-            world.addObject(herobrine, 200, 100);
+            //world.addObject(herobrine, 200, 100);
             world.addObject(player, 20, player.getY());
         }
         //backward to 2
@@ -100,7 +96,7 @@ public class ControlWorld extends World
             Greenfoot.setWorld(world);
             //world.addObject(butterknife, 792, 187);
             world.addObject(item1, 85, 700);
-            world.addObject(baller, 700, 200);
+            //world.addObject(baller, 700, 200);
             world.addObject(player, player.getX(), 20);
         }
         //up to 5
@@ -131,7 +127,7 @@ public class ControlWorld extends World
             world = new Frame3();
             Greenfoot.setWorld(world);
             world.addObject(item2, 80, 100);
-            world.addObject(herobrine, 200, 100);
+            //world.addObject(herobrine, 200, 100);
             world.addObject(player, player.getX(), 20);
         }
         
@@ -143,7 +139,7 @@ public class ControlWorld extends World
             world = new Frame7();
             Greenfoot.setWorld(world);
             world.addObject(item3, 80, 100);
-            world.addObject(sussyAmogus, 200, 100);
+            //world.addObject(sussyAmogus, 200, 100);
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 4
@@ -159,7 +155,7 @@ public class ControlWorld extends World
             world = new Frame9();
             Greenfoot.setWorld(world);
             world.addObject(item4, 80, 100);
-            world.addObject(frebster, 150, 100);
+            //world.addObject(frebster, 150, 100);
             world.addObject(player, player.getX(), getHeight()-20);
         }
         //back to 6
@@ -185,7 +181,7 @@ public class ControlWorld extends World
             world = new Frame7();
             Greenfoot.setWorld(world);
             world.addObject(item3, 80, 100);
-            world.addObject(sussyAmogus, 200, 100);
+            //world.addObject(sussyAmogus, 200, 100);
             world.addObject(player, getWidth()-20, player.getY());
         }
         //forward to 9
@@ -193,7 +189,7 @@ public class ControlWorld extends World
             world = new Frame9();
             Greenfoot.setWorld(world);
             world.addObject(item4, 80, 100);
-            world.addObject(frebster, 150, 100);
+            //world.addObject(frebster, 150, 100);
             world.addObject(player, 20, player.getY());
         }
         //backward to 8

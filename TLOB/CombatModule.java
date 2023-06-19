@@ -24,13 +24,13 @@ public class CombatModule extends World
     public static Boss currentBoss;
     public static int fightCounter;
     public static int fightDuration = 1000;
-    public GreenfootSound music = new GreenfootSound("Toaster.mp3");
+    public GreenfootSound music;
     // change music file name to boss name
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
-    public CombatModule(/*Boss boss, String songName*/)
+    public CombatModule(String bossName, String songName)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 800, 1); 
@@ -42,9 +42,28 @@ public class CombatModule extends World
         addObject(PlayerBar, 484, 643);
         addObject(BossBar, 500, 50);
         addObject(Name, 144, 635);
-        currentBoss = new Toaster(10,1, P); // change new name to current boss name
+        
+        switch(bossName) {
+           case "Baller":
+               currentBoss = new Baller(10,1, P);
+               break;
+           case "Amogus":
+               currentBoss = new Amogus(10,1, P);
+               break;
+           case "FrebbyBear":
+               currentBoss = new FrebbyBear(10,1, P);
+               break;
+           case "Herobrine":
+               currentBoss = new Herobrine(10,1, P);
+               break;
+           case "Toaster":
+               currentBoss = new Toaster(10,1, P);
+               break;
+        } 
+        
         setPaintOrder(CombatPlayer.class);
         addObject(currentBoss, 500, 225);
+        music = new GreenfootSound(songName);
     }
     public void act() {
         music.play();

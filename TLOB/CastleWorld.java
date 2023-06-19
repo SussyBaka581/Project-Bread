@@ -27,6 +27,5 @@ public class CastleWorld extends ControlWorld
         addObject(new WallLeft(), 5, 800);
         
         addObject(new DoorBack(), 500, 760);
-        addObject(new T(), 500, 400);
     }
 }
