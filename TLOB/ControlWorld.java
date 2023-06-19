@@ -7,8 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class ControlWorld extends World
-{   //test comment
-    static Actor player;
+{   static Actor player;
     static Actor butterknife;
     static Actor item1;
     static Actor item2;
