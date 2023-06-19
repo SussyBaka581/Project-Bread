@@ -16,7 +16,7 @@ public class Butterknife extends Player
     public void act()
     {
         if(isTouching(Player.class)){
-            myImage = new GreenfootImage("jerma2.jpg");
+            myImage = new GreenfootImage("stone.png");
             setImage(myImage);
         }
     }
