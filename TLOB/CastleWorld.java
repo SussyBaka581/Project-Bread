@@ -16,6 +16,9 @@ public class CastleWorld extends ControlWorld
     public CastleWorld()
     {
         super(1000, 800, 1);
+        
+        addObject(new T(), 500, 400);
+        
         addObject(player, 500, 700);
         addObject(new WallUp(), 350, 0);
         addObject(new WallUp(), 800, 0);

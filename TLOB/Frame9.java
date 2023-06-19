@@ -17,6 +17,8 @@ public class Frame9 extends ControlWorld
     {
         super(1000, 800, 1);
         
+        addObject(new F(), 80, 100);
+        
         left(20, 20);
         left(20, 105);
         left(20, 150);

@@ -36,15 +36,14 @@ public class ControlWorld extends World
         
         Greenfoot.setWorld(world);
         world.addObject(player, 500, 400);
-        //world.addObject(butterknife, 792, 187);
-        //world.addObject(item1, 80, 700);
-        //world.addObject(item2, 80, 100);
-        //world.addObject(item3, 80, 100);
-        //world.addObject(item4, 80, 100);
     }
     
     public void act()
     {
+    //    if(world != null){
+    //    world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
+    //}
+    //System.out.println(world != null);
         //BOTTOM LEVEL LEFT/RIGHT
         
         //forward to 2
@@ -53,16 +52,18 @@ public class ControlWorld extends World
             world = new Frame2();
             Greenfoot.setWorld(world);
             world.addObject(player, 20, player.getY());
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //backward to 1
         if((player.getX() == 10 || player.getX() == 15) && (player.getY() >= 710 && player.getY() <= 750))
         {
             world = new Frame1();
             Greenfoot.setWorld(world);
-            world.addObject(butterknife, 792, 187);
+            //world.addObject(butterknife, 792, 187);
             world.addObject(item1, 85, 700);
             //world.addObject(baller, 700, 300);
             world.addObject(player, getWidth()-20, player.getY());
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //forward to 3
         if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15) && (player.getY() >= 510 && player.getY() <= 550)){
@@ -71,6 +72,7 @@ public class ControlWorld extends World
             world.addObject(item2, 80, 100);
             //world.addObject(herobrine, 200, 100);
             world.addObject(player, 20, player.getY());
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //backward to 2
         if((player.getX() == 10 || player.getX() == 15) && (player.getY() >= 510 && player.getY() <= 550))
@@ -78,6 +80,7 @@ public class ControlWorld extends World
             world = new Frame2();
             Greenfoot.setWorld(world);
             world.addObject(player, getWidth()-20, player.getY());
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         
         //BOTTOM LEVEL UP/DOWN
@@ -88,6 +91,7 @@ public class ControlWorld extends World
             world = new Frame4();
             Greenfoot.setWorld(world);
             world.addObject(player, player.getX(), getHeight()-20);
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //back to 1
         if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15 && (player.getX() >= 45 && player.getX() <= 75))
@@ -98,14 +102,16 @@ public class ControlWorld extends World
             world.addObject(item1, 85, 700);
             //world.addObject(baller, 700, 200);
             world.addObject(player, player.getX(), 20);
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //up to 5
         if(player.getY() == 0 && (player.getX() >= 125 && player.getX() <= 160))
         {
             world = new Frame5();
             Greenfoot.setWorld(world);
-            world.addObject(butterknife, 500, 400);
+            world.addObject(butterknife, 500, 200);
             world.addObject(player, player.getX(), getHeight()-20);
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //back to 2
         if ((player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15) && (player.getX() >= 125 && player.getX() <= 160))
@@ -113,6 +119,7 @@ public class ControlWorld extends World
             world = new Frame2();
             Greenfoot.setWorld(world);
             world.addObject(player, player.getX(), 20);
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //up to 6
         if(player.getY() == 0 && (player.getX() >=800 && player.getX() <= 830))
@@ -120,6 +127,7 @@ public class ControlWorld extends World
             world = new Frame6();
             Greenfoot.setWorld(world);
             world.addObject(player, player.getX(), getHeight()-20);
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //back to 3
         if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15 && (player.getX() >=800 && player.getX() <= 830))
@@ -129,6 +137,7 @@ public class ControlWorld extends World
             world.addObject(item2, 80, 100);
             //world.addObject(herobrine, 200, 100);
             world.addObject(player, player.getX(), 20);
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         
         //MIDDLE ROW UP/DOWN
@@ -141,6 +150,7 @@ public class ControlWorld extends World
             world.addObject(item3, 80, 100);
             //world.addObject(sussyAmogus, 200, 100);
             world.addObject(player, player.getX(), getHeight()-20);
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //back to 4
         if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15 && (player.getX() >= 300 && player.getX() <= 330))
@@ -148,6 +158,7 @@ public class ControlWorld extends World
             world = new Frame4();
             Greenfoot.setWorld(world);
             world.addObject(player, player.getX(), 20);
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //up to 9
         if(player.getY() == 0 && (player.getX() >= 925 && player.getX() <= 955))
@@ -157,6 +168,7 @@ public class ControlWorld extends World
             world.addObject(item4, 80, 100);
             //world.addObject(frebster, 150, 100);
             world.addObject(player, player.getX(), getHeight()-20);
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //back to 6
         if(player.getY() == getHeight()- 10 || player.getY() == getHeight()- 15 && (player.getX() >= 925 && player.getX() <= 955))
@@ -164,6 +176,7 @@ public class ControlWorld extends World
             world = new Frame6();
             Greenfoot.setWorld(world);
             world.addObject(player, player.getX(), 20);
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         
         //TOP ROW LEFT/RIGHT
@@ -174,6 +187,7 @@ public class ControlWorld extends World
             world = new Frame8();
             Greenfoot.setWorld(world);
             world.addObject(player, 20, player.getY());
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //backward to 7
         if((player.getX() == 10 || player.getX() == 15) && (player.getY() >= 55 && player.getY() <= 85))
@@ -183,6 +197,7 @@ public class ControlWorld extends World
             world.addObject(item3, 80, 100);
             //world.addObject(sussyAmogus, 200, 100);
             world.addObject(player, getWidth()-20, player.getY());
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //forward to 9
         if((player.getX() == getWidth()- 10) || (player.getX() == getWidth()- 15) && (player.getY() >= 220 && player.getY() <= 250)){
@@ -191,6 +206,7 @@ public class ControlWorld extends World
             world.addObject(item4, 80, 100);
             //world.addObject(frebster, 150, 100);
             world.addObject(player, 20, player.getY());
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
         //backward to 8
         if((player.getX() == 10 || player.getX() == 15) && (player.getY() >= 220 && player.getY() <= 250))
@@ -198,6 +214,7 @@ public class ControlWorld extends World
             world = new Frame8();
             Greenfoot.setWorld(world);
             world.addObject(player, getWidth()-20, player.getY());
+            world.setPaintOrder(A.class, B.class, H.class, F.class, T.class);
         }
     }
     
