@@ -9,16 +9,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Tripmine extends Player
 {
     GreenfootImage mine;
+    GreenfootImage mine2;
+    boolean mCollect = false;
     /**
      * Act - do whatever the Item1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        if(isTouching(Player.class)){
+        if(mCollect == false){
+           mine2 = new GreenfootImage("subspacemine.png");
+           mine2.scale(50,50);
+           setImage(mine2);
+        }
+        if(isTouching(Player.class) && mCollect == false){
             mine = new GreenfootImage("tombstone2.png");
             mine.scale(50,50);
             setImage(mine);
+            mCollect = true;
         }
     }
 }
