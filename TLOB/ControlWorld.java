@@ -33,10 +33,10 @@ public class ControlWorld extends World
         item2 = new Elytra();
         item3 = new VCover();
         item4 = new Screws();
-        frebster = new Frebster();
-        sussyAmogus = new Amogus();
-        baller = new Baller();
-        herobrine = new Herobrine();
+        frebster = new F();
+        sussyAmogus = new A();
+        baller = new B();
+        herobrine = new H();
         
         Greenfoot.setWorld(world);
         world.addObject(player, 500, 400);
