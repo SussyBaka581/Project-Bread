@@ -8,12 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Player extends Actor
 {
-    boolean hasButterknife = false;
-    boolean hasMine = false;
-    boolean hasElytra = false;
-    boolean hasVCover = false;
-    boolean hasScrews = false;
-    boolean hasScrewdriver = false;
+    boolean hasButterknife = true;
+    boolean hasMine = true;
+    boolean hasElytra = true;
+    boolean hasVCover = true;
+    boolean hasScrews = true;
+    boolean hasScrewdriver = true;
+    boolean doorNotif = false;
     int moveX = 5;
     int moveY = 5;
     public void act()
@@ -60,6 +61,15 @@ public class Player extends Actor
         }
         if(isTouching(VCover.class)){
             hasVCover = true;
+        }
+        
+        if(isTouching(CastleDoor.class) && hasScrewdriver == true && hasMine == true && hasButterknife == true && hasElytra == true && hasScrews == true && hasVCover == true)
+        {
+            Greenfoot.setWorld(new CastleWorld());
+        }
+        if(isTouching(DoorBack.class) && doorNotif == false){
+            System.out.println("The door locked behind you, no turning back");
+            doorNotif = true;
         }
     }
 }

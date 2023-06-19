@@ -73,5 +73,7 @@ public class Frame8 extends ControlWorld
         down(0, 100);
         up(1000, 185);
         down(1000, 265);
+        
+        addObject(new CastleDoor(), 500, 30);
     }
 }
