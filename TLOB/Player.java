@@ -20,16 +20,16 @@ public class Player extends Actor
     public void act()
     {
         //Basic movement
-        if(Greenfoot.isKeyDown("W") && !isTouching(InvisibleWallUp.class)){
+        if(Greenfoot.isKeyDown("W") && !isTouching(InvisibleWallUp.class) && !isTouching(WallUp.class)){
             setLocation(getX(), getY()-moveY);
         }
-        if(Greenfoot.isKeyDown("S") && !isTouching(InvisibleWallDown.class)){
+        if(Greenfoot.isKeyDown("S") && !isTouching(InvisibleWallDown.class) && !isTouching(WallDown.class)){
             setLocation(getX(), getY()+moveY);
         }
-        if(Greenfoot.isKeyDown("A") && !isTouching(InvisibleWallLeft.class)){
+        if(Greenfoot.isKeyDown("A") && !isTouching(InvisibleWallLeft.class) && !isTouching(WallLeft.class)){
             setLocation(getX()-moveX, getY());
         }
-        if(Greenfoot.isKeyDown("D") && !isTouching(InvisibleWallRight.class)){
+        if(Greenfoot.isKeyDown("D") && !isTouching(InvisibleWallRight.class) && !isTouching(WallRight.class)){
             setLocation(getX()+moveX, getY());
         }
         //sprinting
