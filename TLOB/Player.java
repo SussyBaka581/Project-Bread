@@ -17,6 +17,12 @@ public class Player extends Actor
     boolean doorNotif = false;
     int moveX = 5;
     int moveY = 5;
+    
+    public static boolean BKilled = false;
+    public static boolean AKilled = false;
+    public static boolean HKilled = false;
+    public static boolean FKilled = false;
+    public static boolean TKilled = false;
     public void act()
     {
         //Basic movement
@@ -70,6 +76,23 @@ public class Player extends Actor
         if(isTouching(DoorBack.class) && doorNotif == false){
             System.out.println("The door locked behind you, no turning back");
             doorNotif = true;
+        }
+        
+        //for starting the boss fights
+        if (isTouching(B.class)) {
+            Greenfoot.setWorld(new CombatModule("Baller", "Baller.mp3"));
+        }
+        if (isTouching(A.class)) {
+            Greenfoot.setWorld(new CombatModule("Amogus", "Amogus.mp3"));
+        }
+        if (isTouching(H.class)) {
+            Greenfoot.setWorld(new CombatModule("Herobrine", "Herobrine.mp3"));
+        }
+        if (isTouching(F.class)) {
+            Greenfoot.setWorld(new CombatModule("FrebbyBear", "FrebbyBear.mp3"));
+        }
+        if (isTouching(T.class)) {
+            Greenfoot.setWorld(new CombatModule("Toaster", "Toaster.mp3"));
         }
     }
 }

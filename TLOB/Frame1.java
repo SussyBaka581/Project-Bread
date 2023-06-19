@@ -15,6 +15,9 @@ public class Frame1 extends ControlWorld
     public Frame1()
     {
         super(1000, 800, 1);
+        if (Player.BKilled == false) {
+            addObject(new B(), 85, 700);
+        }
         //left/right/up/down methods in ControlWorld
         left(20, 20);
         left(20, 105);

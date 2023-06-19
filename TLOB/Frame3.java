@@ -16,6 +16,9 @@ public class Frame3 extends ControlWorld
     public Frame3()
     {
         super(1000, 800, 1);
+        if (Player.HKilled == false) {
+            addObject(new H(), 80, 100);
+        }
         
         left(20, 20);
         left(20, 105);

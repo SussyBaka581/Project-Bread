@@ -16,6 +16,9 @@ public class Frame7 extends ControlWorld
     public Frame7()
     {
         super(1000, 800, 1);
+        if (Player.AKilled == false) {
+            addObject(new A(), 80, 100);
+        }
         
         left(20, 20);
         left(20, 105);

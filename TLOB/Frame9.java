@@ -16,6 +16,9 @@ public class Frame9 extends ControlWorld
     public Frame9()
     {
         super(1000, 800, 1);
+        if (Player.FKilled == false) {
+            addObject(new F(), 80, 100);
+        }
         
         left(20, 20);
         left(20, 105);
