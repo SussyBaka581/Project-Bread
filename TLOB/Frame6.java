@@ -15,7 +15,7 @@ public class Frame6 extends ControlWorld
     public Frame6()
     {
         super(1000, 800, 1);
-        addObject(new Afton(), 46, 725);
+        addObject(new Afton(), 150, 700);
         
         left(20, 20);
         left(20, 105);
