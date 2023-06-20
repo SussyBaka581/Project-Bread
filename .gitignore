@@ -40,3 +40,6 @@ replay_pid*
 *.greenfoot
 *.greenfoot
 *.greenfoot
+*.class
+*.ctxt
+*.ctxt
